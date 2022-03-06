@@ -1,0 +1,81 @@
+.workshop-img-container {
+  padding: 1.5rem 0;
+  width: 100%;
+}
+
+.workshop-img-container img {
+  width: 100%;
+}
+
+.workshops .workshop-info  .workshop-title {
+  color: #00ebff;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.workshops .workshop-info  .workshop-subtitle {
+  color: #00ebff;
+  font-size: .9rem;
+  text-align: left;
+}
+
+.workshops .workshop-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.workshops .workshop-info .workshop-form {
+  padding: 0 .5rem;
+  border: none;
+  width: 90%;
+}
+
+.workshops .registration-modal .ant-modal-content .workshop-form .workshop-submit-btn {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.workshops .workshop-info .workshop-form .ant-form-item-label label {
+  color: #00ebff;
+}
+
+.workshops .workshop-info .workshop-form .workshop-input .ant-input {
+  background: transparent;
+  border: 1px solid #00eaff4f;
+  color: #00ebff;
+  transition: border .2s ease-in;
+}
+
+.workshops .workshop-info .workshop-form .workshop-input .ant-input:hover {
+  border: 1px solid #00ebff;
+}
+
+.workshops .workshop-info .workshop-form .workshop-submit-btn {
+  background-color: transparent;
+  border: 1px solid rgba(0, 235, 255, .3);
+  transition: border .2s ease-in;
+}
+
+.workshops .workshop-info .workshop-form .workshop-submit-btn:hover {
+  border: 1px solid rgba(0, 235, 255, 1);
+}
+
+
+.workshops .workshop-form .ant-alert-error {
+  background: rgba(255, 0, 0, .2);
+  border: none;
+}
+
+.workshops .workshop-form .ant-alert-message {
+  color: #ffae00;
+}
+
+@media screen and (max-width: 992px) {
+  .workshop-info .workshop-form {
+    width: 100%;
+  }
+}

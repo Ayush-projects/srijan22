@@ -1,0 +1,74 @@
+.profile {
+  background-color: transparent;
+}
+
+.profile .profile-card {
+  border: none;
+  background: rgba(22, 104, 159, .2);
+}
+
+.profile .profile-card .ant-card-head-wrapper .ant-card-head-title {
+  color: #00ebff;
+}
+
+.profile .profile-card .ant-card-head {
+  border-bottom: 1px solid #00ebff;
+}
+
+.profile .profile-form .ant-form-item-label label {
+  color: #00ebff;
+}
+
+.profile .profile-form .profile-input .ant-input {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #00ebff;
+  transition: border .2s ease-in;
+}
+
+.profile .profile-form .profile-input .ant-input:hover {
+  border: 1px solid #00ebff;
+}
+
+.profile .profile-card .profile-form .profile-update-btn {
+  background-color: transparent;
+  border: 1px solid rgba(0, 235, 255, .3);
+  transition: border .2s ease-in;
+}
+
+.profile .profile-card .profile-form .profile-update-btn:hover {
+  border: 1px solid rgba(0, 235, 255, 1);
+}
+
+.profile .profile-card .profile-form .profile-update-btn span {
+  color: #00ebff;
+}
+
+.user-card {
+  background: rgba(22, 104, 159, .2);
+  border: none;
+}
+
+.user-card .ant-card-head-wrapper .ant-card-head-title {
+  color: #00ebff;
+}
+
+.user-card .user-card-content {
+  text-align: center;
+  width: 100%;
+  font-size: larger;
+  background-color: transparent;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-card .ant-card-head {
+  border-bottom: 1px solid #00ebff;
+}
+
+.user-card .user-card-content .user-avatar {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,74 @@
+.login-form {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: rgba(22, 104, 159, 0.4) !important;
+  padding: 2rem;
+  width: 40%;
+  z-index: 200;
+}
+
+.login-form h1 {
+  color: #fafafa;
+}
+
+.login-form .ant-input {
+  background: transparent;
+  color: #fafafa;
+}
+
+.login-form .ant-checkbox-wrapper span {
+  color: #fafafa;
+}
+
+.login-form .ant-alert-error {
+  background: rgba(255, 0, 0, .2);
+  border: none;
+}
+
+.login-form .ant-alert-message {
+  color: #ffae00;
+}
+
+@media screen and (max-width: 992px) {
+  .login-form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-form {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .login-form {
+    width: 90%;
+  }
+}
+
+.input {
+  background: transparent !important;
+}
+
+.mock-form-link {
+  cursor: pointer;
+  color: #40f9ff;
+}
+
+.mock-form-link:hover {
+  color: rgb(44, 149, 235);
+}
+
+.altSignIn {
+  cursor: pointer;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  background-color: rgba(24, 144, 255, .5);
+}
+
+.altSignIn:hover {
+  background-color: rgba(14, 124, 215, .5);
+}

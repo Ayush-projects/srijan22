@@ -1,0 +1,29 @@
+.talks-img-container {
+  padding: 1.5rem 0;
+  width: 100%;
+}
+
+.talks-img-container img {
+  width: 100%;
+}
+
+.talks .talks-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.talks .talks-subtitle {
+  color: #00ebff;
+  font-size: .9rem;
+  text-align: left;
+  width: 100%;
+}
+
+.f5-registration-modal .f5-reg-iframe {
+  width: 100%;
+  min-height: 70vh;
+}

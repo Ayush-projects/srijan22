@@ -1,0 +1,210 @@
+.main-layout {
+  height: 100vh;
+  background: radial-gradient(circle, rgba(0, 0, 0, .25), rgba(0, 0, 0, .5)), url(../assets/Images/bg-landing.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.particles {
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fadeIn .8s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.navigation {
+  z-index: 100;
+  height: 8vh;
+  padding: 0 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: transparent;
+}
+
+.nav-right .dropdown-btn .ant-btn {
+  background-color: transparent;
+  color: #00ebff;
+  border: 1px solid #00ebff;
+}
+
+.nav-dropdown-menu {
+  background-color: transparent;
+}
+
+.nav-dropdown-menu .ant-dropdown-menu-item {
+  border: 1px solid #00ebff;
+  background-color: transparent;
+  color: #00ebff;
+}
+
+.dashboard-sider {
+  z-index: 100;
+  height: 90vh;
+  padding: 2rem 0;
+  background:transparent;
+}
+
+.dashboard-sider-menu {
+  background: transparent;
+  color: #ffae00;
+}
+
+.dashboard-sider-menu .ant-menu .ant-menu-root .ant-menu-inline {
+  border-right: none !important;
+}
+
+.appdrawer-icon {
+  display: none;
+  color: #ffae00;
+  font-size: 1.75rem;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-sider {
+    display: none;
+  }
+
+  .appdrawer-icon {
+    display: inline-block;
+  }
+
+  .nav-brand {
+    display: none;
+  }
+}
+
+.menuBtn{
+  cursor: pointer;
+  background-color: rgba(22, 104, 159, 0.2);
+  background-image: url(https://robertsspaceindustries.com/rsi/static/images/content-page/horizontal-lined-bg.png);
+  padding: 1rem 2rem;
+  color: white;
+  margin: .3rem;
+  display: inline-block;
+  border-right: .2rem solid #00ebff;
+  position: relative;
+  overflow: hidden;
+  text-indent: 0;
+}
+
+p:hover{
+  opacity: 1;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+.menuBtn p{
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+.menuBtn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    background: rgba(10, 24, 34, 0.2);
+}
+
+.menuBtn:hover:before {
+  width: 100%;
+  z-index: 0;
+  opacity: .7;
+}
+
+.menuBtn:hover{
+  color: #ffae00!important;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+
+.menuBtnLink:hover{
+  color: #ffae00!important;
+  z-index: 1000;
+
+}
+
+.ant-menu-inline{
+border: none!important;
+}
+
+.ant-menu-item::after{
+  border: none!important;
+  background-color: transparent!important;
+}
+
+.ant-menu-item-selected{
+  background-color: rgba(0,0,0,0.5)!important;
+  color: #ffae00!important;
+  border-right: 2px solid #ffae00;
+
+}
+
+.ant-menu-item-selected > a, .ant-menu-item-selected > a:hover{
+  color: #ffae00!important;
+}
+
+.dashboard-sider-menu .ant-menu-item > a {
+  color: #00ebff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 300;
+  text-align: center;
+  background: rgba(22, 104, 159, .2);
+  color: #00ebff;
+  margin: .5rem;
+}
+
+.footer .footer-social-media-icons {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .footer .footer-social-media-icons {
+    width: 30%;
+  }
+}
+
+.ant-card-actions > li:not(:last-child) {
+  border-right: 1px solid #00ebff;
+}

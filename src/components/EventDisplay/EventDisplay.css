@@ -1,0 +1,33 @@
+.eventInfo {
+  padding: 1rem;
+}
+
+.event-img-container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.event-img-container img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .eventInfo {
+    padding: 0;
+  }
+  
+  .event-img-container {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+
+.events-poc-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+}

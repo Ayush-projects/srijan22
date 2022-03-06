@@ -1,0 +1,67 @@
+.events-grid {
+  width: 100%;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, 350px);
+  justify-content: center;
+}
+
+.events-grid .events-card {
+  margin-bottom: 1rem;
+  width: 350px;
+  background-color: #00eaff11;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, .2);
+}
+
+.events-grid .events-card .events-card-visit-btn {
+  color: #00ebff;
+  padding: .5rem;
+  border: 1px solid transparent;
+  transition: border .2s ease-out;
+}
+
+.events-grid .events-card .events-card-visit-btn:hover {
+  border: 1px solid #00ebff;
+}
+
+.events-card .events-card-header {
+  width: 100%;
+  min-height: 150px;
+  background-color: #00eaff11;
+}
+
+.events-card .events-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: repeat(auto-fill, 300px);
+  }
+  
+  .events-card .events-card-header {
+    min-height: 100px;
+  }
+
+  .events-grid .events-card {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .events-grid {
+    grid-template-columns: repeat(auto-fill, 250px);
+  }
+
+  .events-grid .events-card {
+    width: 250px;
+  }
+}

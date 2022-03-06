@@ -1,0 +1,74 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-carousel {
+  list-style: none;
+  display: flex;
+  padding: 0 0 1rem 0;
+  overflow-x: auto;
+}
+
+.custom-carousel::-webkit-scrollbar {
+  width: 1px;
+}
+
+.custom-carousel::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+.custom-carousel-item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.custom-carousel-item {
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+}
+
+.ant-card-actions{
+  background: transparent;
+  border-top: solid 2px #00ebff;
+}
+
+.icons{
+  color: #00ebff!important;
+}
+
+.icons:hover{
+  color: #ffae00!important;
+}
+
+.dashboard-app-section {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  color: #00ebff;
+}
+
+.dashboard-app-section .dashboard-app-img-container {
+  width: 100%;
+  margin-bottom: .75rem;
+}
+
+.dashboard-app-section .dashboard-app-img-container img {
+  width: 100%;
+}
+
+.dashboard-img-container {
+  width: 100%;
+  padding: .5rem;
+}
+
+.dashboard-img-container img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-img-container {
+    padding: .5rem 0;
+  }
+}

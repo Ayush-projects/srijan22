@@ -1,0 +1,28 @@
+.splash-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #011039;
+}
+
+.splash-screen .loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.loader-container .ant-progress .ant-progress-text {
+  color: #00ebff;
+}
+
+.d-none {
+  display: none !important;
+}
