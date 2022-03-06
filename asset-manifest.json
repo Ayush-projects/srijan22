@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/srijan22/static/css/main.aaf740ae.chunk.css",
-    "main.js": "/srijan22/static/js/main.d496e30b.chunk.js",
-    "main.js.map": "/srijan22/static/js/main.d496e30b.chunk.js.map",
+    "main.js": "/srijan22/static/js/main.d6f38cbf.chunk.js",
+    "main.js.map": "/srijan22/static/js/main.d6f38cbf.chunk.js.map",
     "runtime-main.js": "/srijan22/static/js/runtime-main.dbc6ee6d.js",
     "runtime-main.js.map": "/srijan22/static/js/runtime-main.dbc6ee6d.js.map",
     "static/css/2.ff8bd605.chunk.css": "/srijan22/static/css/2.ff8bd605.chunk.css",
     "static/js/2.4161b872.chunk.js": "/srijan22/static/js/2.4161b872.chunk.js",
     "static/js/2.4161b872.chunk.js.map": "/srijan22/static/js/2.4161b872.chunk.js.map",
     "index.html": "/srijan22/index.html",
-    "precache-manifest.4a96336c1e462632f243ebb0c32ef8be.js": "/srijan22/precache-manifest.4a96336c1e462632f243ebb0c32ef8be.js",
+    "precache-manifest.2f877d6d781097c9f18d7bac8d25c3e3.js": "/srijan22/precache-manifest.2f877d6d781097c9f18d7bac8d25c3e3.js",
     "service-worker.js": "/srijan22/service-worker.js",
     "static/css/2.ff8bd605.chunk.css.map": "/srijan22/static/css/2.ff8bd605.chunk.css.map",
     "static/css/main.aaf740ae.chunk.css.map": "/srijan22/static/css/main.aaf740ae.chunk.css.map",
@@ -47,6 +47,6 @@
     "static/css/2.ff8bd605.chunk.css",
     "static/js/2.4161b872.chunk.js",
     "static/css/main.aaf740ae.chunk.css",
-    "static/js/main.d496e30b.chunk.js"
+    "static/js/main.d6f38cbf.chunk.js"
   ]
 }
