@@ -99,9 +99,10 @@ const Landing = props => {
                     }}>
                         14th -17th April
                     </Title>
-                    <span className="btn">
-          <a href="https://drive.google.com/uc?id=1PLxCWVKJ-2bPHM6yp4TVI2AUO7mZjLZZ&export=download"
-             style={{padding: 0, margin: 0, color: 'white'}}>Checkout the Srijan'22 Brochure</a>
+                    <span className="btn"
+                          onClick={() => window.open("https://drive.google.com/uc?id=1PLxCWVKJ-2bPHM6yp4TVI2AUO7mZjLZZ&export=download", "_blank")}>
+          <p
+              style={{padding: 0, margin: 0, color: 'white'}}>Checkout the Srijan'22 Brochure</p>
         </span>
                     <div className="landing-actions-main">
                         {/* {isAuthenticated ? (
@@ -122,7 +123,6 @@ const Landing = props => {
                     </div>
                 </div>) : null}
 
-            s
             {showForm === 'login' ? <LoginForm setShowForm={setShowForm}/> : null}
             {showForm === 'register' ? <RegisterForm setShowForm={setShowForm}/> : null}
             {showForm === 'forgot-password' ? <PasswordResetForm/> : null}
