@@ -89,7 +89,7 @@ const Landing = props => {
           </div>
           <img src={srijanLogo} style={{ animation: 'fadeIn 4s ease-in' }} alt="srijan-logo" width="500px"/>
           <Title level={4} style={{ color: '#fafafa', margin: 0, animation: 'fadeIn 4s ease-in', marginTop: '-1.25rem', marginBottom: '.75rem' }}>
-           Coming Soon
+           14 -17 April
           </Title>
           <div className="landing-actions-main">
             {/* {isAuthenticated ? (
