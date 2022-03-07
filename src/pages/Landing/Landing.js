@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Typography, Modal, Button } from 'antd';
 import fgimg from '../../assets/Images/fg-landing.png';
 import srijanLogo from '../../assets/Images/srijan_logo_white.png';
+
 import JULogo from '../../assets/Images/Jadavpur_University_Logo.svg';
 import Particles from 'react-particles-js';
 import './Landing.css';
@@ -109,11 +110,13 @@ const Landing = props => {
             )} */}
           </div>
         </div>) : null}
-      {/* {showForm === '' ? (
+
+        
+      {showForm === '' ? (
         <span className="btn" onClick={e => setModalVisible(true)}>
-          <p style={{ padding: 0, margin: 0 }}>Prelims results</p>
+          <a href="" style={{ padding: 0, margin: 0, color: 'white' }}>Brochure</a>
         </span>
-      ) : null} */}
+      ) : null}
       {showForm === 'login' ? <LoginForm setShowForm={setShowForm} /> : null }
       {showForm === 'register' ? <RegisterForm setShowForm={setShowForm} /> : null }
       {showForm === 'forgot-password' ? <PasswordResetForm /> : null}
