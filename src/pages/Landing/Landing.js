@@ -28,7 +28,7 @@ const Landing = props => {
     const [modalVisible, setModalVisible] = useState(false);
 
     return (
-        <div>
+        <div style={{width: "100vw"}}>
        <section className="landing">
             <PreLoader setIsLoading={setIsLoading}/>
             {/* <Modal
