@@ -3,7 +3,11 @@ import {Link} from 'react-router-dom';
 import {Typography, Modal, Button} from 'antd';
 import fgimg from '../../assets/Images/fg-landing.png';
 import srijanLogo from '../../assets/Images/srijan_logo_white.png';
-
+import srijan_past_sponsers from '../../assets/Images/srijan_past_sponsers.png'
+import srijan_past_footfalls from '../../assets/Images/srijan_past_footfalls.png'
+import srijan_past_events from '../../assets/Images/srijan_past_events.png'
+import srijan_past_events1 from '../../assets/Images/srijan_past_events1.png'
+import srijan_past_attraction from '../../assets/Images/srijan_past_attraction.png'
 import JULogo from '../../assets/Images/Jadavpur_University_Logo.svg';
 import Particles from 'react-particles-js';
 import './Landing.css';
@@ -24,7 +28,8 @@ const Landing = props => {
     const [modalVisible, setModalVisible] = useState(false);
 
     return (
-        <section className="landing">
+        <div>
+       <section className="landing">
             <PreLoader setIsLoading={setIsLoading}/>
             {/* <Modal
           title="Prelims results"
@@ -126,7 +131,17 @@ const Landing = props => {
             {showForm === 'login' ? <LoginForm setShowForm={setShowForm}/> : null}
             {showForm === 'register' ? <RegisterForm setShowForm={setShowForm}/> : null}
             {showForm === 'forgot-password' ? <PasswordResetForm/> : null}
+           
         </section>
+        <br/>
+        <br/>
+      
+        <img src={srijan_past_footfalls} style={{height: "100vh", width: "100vw"}}></img><br/> <br/>
+        <img src={srijan_past_sponsers} style={{height: "100vh", width: "100vw"}}></img><br/> <br/>
+        <img src={srijan_past_events} style={{height: "100vh", width: "100vw"}}></img><br/> <br/>
+        <img src={srijan_past_events1} style={{height: "100vh", width: "100vw"}}></img><br/> <br/>
+        <img src={srijan_past_attraction} style={{height: "100vh", width: "100vw"}}></img><br/> <br/>
+        </div>
     )
 }
 

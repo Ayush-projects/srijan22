@@ -9,7 +9,7 @@ import { notification } from 'antd';
 import PrivateRoute from './hoc/PrivateRoute';
 import LandingPage from './pages/Landing/Landing';
 import AppLayout from './layout/AppLayout';
-console.log(process.env.REACT_APP_SRIJAN20_ayush)
+
 const App = props => {
   const { history } = props;
   const { currentUser } = useContext(AuthContext);
