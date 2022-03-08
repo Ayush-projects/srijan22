@@ -107,9 +107,20 @@ const Landing = props => {
                     </Title>
                     <span className="btn"
                           onClick={() => window.open("https://drive.google.com/uc?id=1PLxCWVKJ-2bPHM6yp4TVI2AUO7mZjLZZ&export=download", "_blank")}>
-          <p
+                   <p
               style={{padding: 0, margin: 0, color: 'white'}}>Checkout the Srijan'22 Brochure</p>
+             
         </span>
+        <span className="btn1">
+                  
+              <div id="scrollContainer" style={{marginTop: "1rem"}}>
+              <div id="scroll" style={{width: "2em", height: "2em", backgroundColor: "transparent" , zIndex: "80", 
+            bottom: "25px", position: "absolute", borderWidth: "0 0.25em 0.25em 0",  borderStyle: "solid", borderColor: "antiquewhite",  animation: "scrolldown 1.2s ease-in-out infinite 0.15s"}}></div>
+            <div id="scroll" style={{width: "2em", height: "2em", backgroundColor: "transparent" , zIndex: "80", 
+            bottom: "40px", position: "absolute", borderWidth: "0 0.25em 0.25em 0",  borderStyle: "solid", borderColor: "antiquewhite",  animation: "scrolldown 1.2s ease-in-out infinite"}}></div>
+            </div>
+        </span>
+        
                     <div className="landing-actions-main">
                         {/* {isAuthenticated ? (
               <Link to="/app/dashboard">
@@ -127,10 +138,7 @@ const Landing = props => {
               </>
             )} */}
 
-<div id="scroll" style={{width: "2em", height: "2em", backgroundColor: "transparent" , zIndex: "80", 
-            bottom: "25px", position: "absolute", borderWidth: "0 0.25em 0.25em 0",  borderStyle: "solid", borderColor: "antiquewhite",  animation: "scrolldown 1.2s ease-in-out infinite 0.15s"}}></div>
-            <div id="scroll" style={{width: "2em", height: "2em", backgroundColor: "transparent" , zIndex: "80", 
-            bottom: "40px", position: "absolute", borderWidth: "0 0.25em 0.25em 0",  borderStyle: "solid", borderColor: "antiquewhite",  animation: "scrolldown 1.2s ease-in-out infinite"}}></div>
+
           
                     </div>
 

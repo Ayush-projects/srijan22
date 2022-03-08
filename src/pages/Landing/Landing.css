@@ -84,6 +84,19 @@
   overflow: hidden;
   text-indent: 0;
 }
+.btn1{
+  cursor: pointer;
+  background-color: rgba(22, 104, 159, 0);
+  background-image: url(https://robertsspaceindustries.com/rsi/static/images/content-page/horizontal-lined-bg.png);
+  padding: 1rem 2rem;
+  color: #00ebff;
+  margin: .5rem;
+  display: inline-block;
+  
+  position: relative;
+  overflow: hidden;
+  text-indent: 0;
+}
 
 .btn-2{
   background-color: rgba(22, 104, 159, 0.2);
