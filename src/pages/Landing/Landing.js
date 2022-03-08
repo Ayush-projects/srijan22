@@ -11,6 +11,7 @@ import srijan_past_attraction from '../../assets/Images/srijan_past_attraction.p
 import JULogo from '../../assets/Images/Jadavpur_University_Logo.svg';
 import Particles from 'react-particles-js';
 import './Landing.css';
+import './scroll.css'
 
 import LoginForm from '../../components/Login/Login';
 import RegisterForm from '../../components/Register/Register';
@@ -125,13 +126,21 @@ const Landing = props => {
                 </span>
               </>
             )} */}
+
+<div id="scroll" style={{width: "2em", height: "2em", backgroundColor: "transparent" , zIndex: "80", 
+            bottom: "25px", position: "absolute", borderWidth: "0 0.25em 0.25em 0",  borderStyle: "solid", borderColor: "antiquewhite",  animation: "scrolldown 1.2s ease-in-out infinite 0.15s"}}></div>
+            <div id="scroll" style={{width: "2em", height: "2em", backgroundColor: "transparent" , zIndex: "80", 
+            bottom: "40px", position: "absolute", borderWidth: "0 0.25em 0.25em 0",  borderStyle: "solid", borderColor: "antiquewhite",  animation: "scrolldown 1.2s ease-in-out infinite"}}></div>
+          
                     </div>
+
                 </div>) : null}
 
             {showForm === 'login' ? <LoginForm setShowForm={setShowForm}/> : null}
             {showForm === 'register' ? <RegisterForm setShowForm={setShowForm}/> : null}
             {showForm === 'forgot-password' ? <PasswordResetForm/> : null}
-           
+            
+            
         </section>
         <br/>
         <br/>
