@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Srijan 22</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+        * {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  color: white;
+  background-color: black;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.app__videos {
+  position: relative;
+  height: 750px;
+  background-color: white;
+  overflow: scroll;
+  width: 100%;
+  max-width: 400px;
+  scroll-snap-type: y mandatory;
+  border-radius: 20px;
+}
+
+.app__videos::-webkit-scrollbar {
+  display: none;
+}
+
+.app__videos {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.video {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  scroll-snap-align: start;
+}
+
+.video__player {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.videoSidebar {
+  position: absolute;
+  top: 48%;
+  right: 10px;
+}
+
+.videoSidebar .material-icons {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.videoSidebar__button {
+  padding: 20px;
+  text-align: center;
+}
+
+.videoFooter {
+  position: relative;
+  bottom: 150px;
+  margin-left: 20px;
+  color: white;
+  display: flex;
+}
+
+@keyframes spinTheRecord {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.videoFooter__record {
+  animation: spinTheRecord infinite 5s linear;
+  height: 50px;
+  filter: invert(1);
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.videoFooter__text {
+  flex: 1;
+}
+
+.videoFooter__text h3 {
+  padding-bottom: 20px;
+}
+
+.videoFooter__icon {
+  position: absolute;
+}
+
+.videoFooter__ticker {
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.videoFooter__ticker marquee {
+  height: fit-content;
+  margin-left: 30px;
+  width: 60%;
+}
+
+.videoFooter__description {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 425px) {
+  .app__videos {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
+body {
+  background: #444;
+}
+
+.play-btn {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient( rgba(255, 0, 128, 0.8) 60%, rgba(255, 255, 255, 1) 62%);
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  margin: 100px auto;
+  box-shadow: 0px 0px 25px 3px rgba(255, 0, 128, 0.8);
+}
+
+/* triangle */
+.play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
+  transform-origin: center center;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 25px solid #fff;
+  z-index: 100;
+  -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+/* pulse wave */
+.play-btn:before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate1 2s;
+  animation: pulsate1 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, .75);
+  top: -30%;
+  left: -30%;
+  background: rgba(198, 16, 0, 0);
+}
+
+@-webkit-keyframes pulsate1 {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+    box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+    box-shadow: none;
+
+  }
+}
+
+@keyframes pulsate1 {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+    box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1);
+    opacity: 0;
+    box-shadow: none;
+
+  }
+}
+    </style>
+  </head>
+  <body>
+    <!-- <a class="play-btn" href="#"></a> -->
+    <div class="app__videos">
+      <!-- video starts -->
+      <div class="video">
+        <video class="video__player" src="https://github.com/Ayush-projects/hosting/blob/main/intro.webm?raw=true" controls id="video"></video>
+
+        <!-- sidebar -->
+      
+      </div>
+     
+    </div>
+
+    <script>
+       
+    </script>
+  </body>
+</html>

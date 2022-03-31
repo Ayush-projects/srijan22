@@ -111,7 +111,8 @@ const Landing = props => {
               style={{padding: 0, margin: 0, color: 'white'}}>Checkout the Srijan'22 Brochure</p>
              
         </span>
-        <span className="btn1">
+        <a href="/video.html">
+        <span className="btn1" >
                   
               <div id="scrollContainer" style={{marginTop: "1rem"}}>
               <div id="scroll" style={{width: "2em", height: "2em", backgroundColor: "transparent" , zIndex: "80", 
@@ -120,6 +121,7 @@ const Landing = props => {
             bottom: "40px", position: "absolute", borderWidth: "0 0.25em 0.25em 0",  borderStyle: "solid", borderColor: "antiquewhite",  animation: "scrolldown 1.2s ease-in-out infinite"}}></div>
             </div>
         </span>
+        </a>
         
                     <div className="landing-actions-main">
                         {/* {isAuthenticated ? (
@@ -152,12 +154,12 @@ const Landing = props => {
         </section>
         <br/>
         <br/>
-      
-        <img src={srijan_past_footfalls} style={{height: "100vh", width: "100vw"}}></img><br/> <br/>
+        {/* <div class="wise-iframe-wrapper" id="homevideo"><iframe width="315" height="700" src="https://www.youtube.com/embed/bcRQjfqS2uQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture autoplay" allowfullscreen></iframe></div> */}
+        {/* <img src={srijan_past_footfalls} style={{height: "100vh", width: "100vw"}}></img><br/> <br/>
         <img src={srijan_past_sponsers} style={{height: "100vh", width: "100vw"}}></img><br/> <br/>
         <img src={srijan_past_events} style={{height: "100vh", width: "100vw"}}></img><br/> <br/>
         <img src={srijan_past_events1} style={{height: "100vh", width: "100vw"}}></img><br/> <br/>
-        <img src={srijan_past_attraction} style={{height: "100vh", width: "100vw"}}></img><br/> <br/>
+        <img src={srijan_past_attraction} style={{height: "100vh", width: "100vw"}}></img><br/> <br/> */}
         </div>
     )
 }
