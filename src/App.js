@@ -9,6 +9,7 @@ import { notification } from 'antd';
 import PrivateRoute from './hoc/PrivateRoute';
 import LandingPage from './pages/Landing/Landing';
 import AppLayout from './layout/AppLayout';
+import Merchandise22 from './pages/Merchandise/Merchandise22';
 
 const App = props => {
   const { history } = props;
@@ -52,6 +53,7 @@ const App = props => {
   return (
     <Switch>
       <Route path='/' exact render={props => <LandingPage isAuthenticated={isAuthenticated} username={userName} />} />
+      <Route path='/tshirt' exact render={props => <Merchandise22 />} />
       <PrivateRoute
         component={AppLayout}
         path='/app'

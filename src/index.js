@@ -9,12 +9,6 @@ import LastLocationProvider from './context/lastLocationContext';
 require('dotenv').config();
 
 
-
-
-
-
-
-
 ReactDOM.render(
   <BrowserRouter>
     <AuthContextProvider>

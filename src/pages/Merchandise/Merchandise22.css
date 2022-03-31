@@ -1,0 +1,210 @@
+.landing {
+    height: 100vh;
+    background: radial-gradient(circle, rgba(0, 0, 0, .25), rgba(0, 0, 0, .5)), url(../../assets/Images/bg-landing.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .wise-iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.10%;
+    height: 0;
+    overflow: hidden;
+  }
+  a { color: inherit; } 
+  
+  .wise-iframe-wrapper iframe,
+  .wise-iframe-wrapper object,
+  .wise-iframe-wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .particles {
+    height: 100vh;
+    width: 100%;
+    z-index: 101;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fadeIn .8s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .landing-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+  }
+  
+  .landing-actions-heading {
+    margin-bottom: -3rem;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .landing-actions-main {
+    animation: fadeIn 4s ease-in;
+  }
+  
+  .landing-form {
+    max-height: 80%;
+    width: auto;
+  }
+  
+  .landing-button {
+    background-color: rgba(22, 104, 159, 0.2);
+    background-image: url(https://robertsspaceindustries.com/rsi/static/images/content-page/horizontal-lined-bg.png);
+    color: #00ebff;
+    text-decoration: none;
+    margin: .3rem;
+    display: inline-block;
+    border-left: .2rem solid #00ebff;
+    position: relative;
+    overflow: hidden;
+    text-indent: 0;
+  }
+  
+  .btn{
+    cursor: pointer;
+    background-color: rgba(22, 104, 159, 0.2);
+    background-image: url(https://robertsspaceindustries.com/rsi/static/images/content-page/horizontal-lined-bg.png);
+    padding: 1rem 2rem;
+    color: #00ebff;
+    margin: 1.5rem;
+    display: inline-block;
+    border-left: .2rem solid #00ebff;
+    position: relative;
+    overflow: hidden;
+    text-indent: 0;
+  }
+  .btn1{
+    cursor: context-menu;
+    background-color: rgba(22, 104, 159, 0);
+    background-image: url(https://robertsspaceindustries.com/rsi/static/images/content-page/horizontal-lined-bg.png);
+    padding: 1rem 2rem;
+    color: #00ebff;
+    margin: .5rem;
+    display: inline-block;
+    
+    position: relative;
+    overflow: hidden;
+    text-indent: 0;
+  }
+  
+  .btn-2{
+    background-color: rgba(22, 104, 159, 0.2);
+    background-image: url(https://robertsspaceindustries.com/rsi/static/images/content-page/horizontal-lined-bg.png);
+    padding: .5rem 1.5rem;
+    color: #fff;  
+    border:.1rem solid rgba(22, 104, 159, 0.2);
+    text-indent:0;
+  }
+  
+  .btn-2:hover{
+    color: #00ebff;
+    border-color: #00ebff;
+  }
+  
+  p:hover{
+    opacity: 1;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
+  
+  .btn p{
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+  }
+  
+  .btn:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 0;
+      z-index: 1;
+      -webkit-transition: all .4s;
+      -moz-transition: all .4s;
+      transition: all .4s;
+      background: rgba(10, 24, 34, 0.8);
+  }
+  
+  .btn:hover:before {
+    width: 100%;
+    z-index: 0;
+    opacity: .7;
+  }
+  
+  .btn:hover{
+    color: #ffae00;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
+  
+  .fgimg{
+    height: 100%;
+    position: absolute;
+    top: -17.5%;
+    z-index: 1;
+    animation: up-down 5s infinite linear;
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(0);
+    }
+  
+    20% {
+      transform: translateY(-.5rem);
+    }
+  
+    40% {
+      transform: translateY(-1rem);
+    }
+  
+    60% {
+      transform: translateY(-.5rem);
+    }
+  
+    80% {
+      transform: translateY(.3rem);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+  label{
+      color: #fff !important;
+      text-transform: uppercase !important;
+  }

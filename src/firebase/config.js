@@ -12,6 +12,7 @@ const secondaryAppConfig = {
   messagingSenderId: process.env.REACT_APP_SRIJAN20_DB_messagingSenderId,
   appId: process.env.REACT_APP_SRIJAN20_DB_appId
 };
+console.log(secondaryAppConfig)
 // Initialize another app with a different config
 var secondary = firebase.initializeApp(secondaryAppConfig);
 // Retrieve the database.
