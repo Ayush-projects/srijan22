@@ -106,9 +106,9 @@ const Landing = props => {
                         14th -17th April
                     </Title>
                     <span className="btn"
-                          onClick={() => window.open("https://drive.google.com/uc?id=1PLxCWVKJ-2bPHM6yp4TVI2AUO7mZjLZZ&export=download", "_blank")}>
+                          onClick={() => window.open("https://www.srijanju.in/merchandise", "_self")}>
                    <p
-              style={{padding: 0, margin: 0, color: 'white'}}>Checkout the Srijan'22 Brochure</p>
+              style={{padding: 0, margin: 0, color: 'white'}}> Srijan'22 Merchandise</p>
              
         </span>
         <a href="/video.html">
