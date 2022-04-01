@@ -53,7 +53,7 @@ const App = props => {
   return (
     <Switch>
       <Route path='/' exact render={props => <LandingPage isAuthenticated={isAuthenticated} username={userName} />} />
-      <Route path='/tshirt' exact render={props => <Merchandise22 />} />
+      <Route path='/merchandise' exact render={props => <Merchandise22 />} />
       <PrivateRoute
         component={AppLayout}
         path='/app'

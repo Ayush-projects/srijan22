@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import {Typography, Input, Button, Row, Col, Form, Select, Container} from 'antd';
+import {Typography, Input, Button, Row, Col, Form, Select, Radio} from 'antd';
 import srijanLogo from '../../assets/Images/srijan_logo_white.png';
 import JULogo from '../../assets/Images/Jadavpur_University_Logo.svg';
 import blackTShirt from '../../assets/Images/black-web.jpg'
@@ -11,6 +11,45 @@ const { Option } = Select;
 const {Title} = Typography;
 
 const Merchandise22 = props => {
+  function isDate(val) {
+    // Cross realm comptatible
+    return Object.prototype.toString.call(val) === '[object Date]'
+  }
+  
+  function isObj(val) {
+    return typeof val === 'object'
+  }
+  
+   function stringifyValue(val) {
+    if (isObj(val) && !isDate(val)) {
+      return JSON.stringify(val)
+    } else {
+      return val
+    }
+  }
+  
+  function buildForm({ action, params }) {
+    const form = document.createElement('form')
+    form.setAttribute('method', 'post')
+    form.setAttribute('action', action)
+  
+    Object.keys(params).forEach(key => {
+      const input = document.createElement('input')
+      input.setAttribute('type', 'hidden')
+      input.setAttribute('name', key)
+      input.setAttribute('value', stringifyValue(params[key]))
+      form.appendChild(input)
+    })
+  
+    return form
+  }
+  
+   function post(details) {
+    const form = buildForm(details)
+    document.body.appendChild(form)
+    form.submit()
+    form.remove()
+  }
 const [formData, setformData] = useState({
     name: '',
     email: '',
@@ -19,8 +58,10 @@ const [formData, setformData] = useState({
     college: '',
     name_on_tshirt: '',
     tshirt_color: 'black',
-    tshirt_size: 'm'
+    tshirt_size: 'm',
+    payment_mode: 'online'
 })
+const [submitBtnText, setsubmitBtnText] = useState("Proceed to checkout")
 const handleFormChange=(e)=>{
     const fieldName=e.target.name;
     const fieldVal=e.target.value;
@@ -30,10 +71,47 @@ const handleFormChange=(e)=>{
 const validation= () => {
   return true;
 }
-
+const handlePaymentMode = (e) => {
+  if(e.target.value==="online"){
+    setsubmitBtnText("Proceed to checkout")
+  }else if(e.target.value==="offline"){
+    setsubmitBtnText("Register here")
+  }
+  setformData((prev) => ({ ...prev, payment_mode: e.target.value }))
+}
 const handleFormSubmit=(e)=>{
     e.preventDefault();
     if(validation){
+      const url = process.env.REACT_APP_SRIJAN22_tshirtBackendUrl+"/api/payment";
+      const options = {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json;charset=UTF-8",
+        },
+        body: JSON.stringify({
+          ...formData, amount: 400
+      }),
+      };
+      fetch(url, options)
+        .then((response) => response.json())
+        .then((data) => {
+          try{
+            var information={
+              action:`https://securegw-stage.paytm.in/theia/api/v1/showPaymentPage?mid=${data.mid}&orderId=${data.orderId}`,
+              params:{
+                orderId: data.orderId,
+                txnToken: data.initiate_tran_resp.body.txnToken,
+                mid:data.mid
+              }
+          }
+           post(information)
+          }
+          catch(err){
+            console.log(err)
+          }
+          console.log(data);
+        });
       console.log(formData);
     }
     else{
@@ -59,7 +137,7 @@ const handleFormSubmit=(e)=>{
           <div className="container">
             <Row justify="space-around" align="middle">
               <Col xs={24} md={16} xl={12}>
-                <div style={{ paddingTop: "20%" }}>
+                <div style={{ paddingTop: "50px" }}>
                   <img
                     src={blackTShirt}
                     style={{ maxWidth: "100%", height: "auto", margin: "2%" }}
@@ -161,9 +239,15 @@ const handleFormSubmit=(e)=>{
                       <Option value="xxl">XXL(46)</Option>
                     </Select>
                   </Form.Item>
+                  <Form.Item label="Payment Mode">
+                  <Radio.Group onChange={(e)=>handlePaymentMode(e)} value={formData.payment_mode}>
+                    <Radio value="online">Online</Radio>
+                    <Radio value="offline">Cash</Radio>
+                  </Radio.Group>
+                  </Form.Item>
                   <Form.Item>
-                    <Button type="primary" htmlType="submit" >
-                      Proceed to checkout
+                    <Button type="primary" htmlType="submit">
+                      {submitBtnText}
                     </Button>
                   </Form.Item>
                 </Form>
