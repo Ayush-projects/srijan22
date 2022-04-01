@@ -161,6 +161,10 @@ const handleFormSubmit=(e)=>{
                       <Option value="xxl">XXL(46)</Option>
                     </Select>
                   </Form.Item>
+                  {/* <Form.Item>
+                    <h4 style={{color: "white", display: "inline-block", marginLeft: "3px"}}>Pay</h4>
+                    Pay Now <input type="radio" style={{marginLeft: "3px"}}/> 
+                  </Form.Item> */}
                   <Form.Item>
                     <Button type="primary" htmlType="submit" >
                       Proceed to checkout
