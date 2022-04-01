@@ -223,7 +223,7 @@ const handleFormSubmit=(e)=>{
                     <Input
                       required={true}
                       type="text"
-                      placeholder="Enter your phone number"
+                      placeholder="Enter your Department"
                       name="department"
                       onChange={(e) => handleFormChange(e)}
                     />
@@ -270,7 +270,7 @@ const handleFormSubmit=(e)=>{
                       }>
                       <Option value="s">S(38)</Option>
                       <Option value="m">M(40)</Option>
-                      <Option value="l">L(40)</Option>
+                      <Option value="l">L(42)</Option>
                       <Option value="xl">XL(44)</Option>
                       <Option value="xxl">XXL(46)</Option>
                     </Select>
