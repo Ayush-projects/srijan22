@@ -15,9 +15,11 @@ const [formData, setformData] = useState({
     name: '',
     email: '',
     phone: null,
+    department: '',
+    college: '',
     name_on_tshirt: '',
-    tshirt_color: '',
-    tshirt_size: ''
+    tshirt_color: 'black',
+    tshirt_size: 'm'
 })
 const handleFormChange=(e)=>{
     const fieldName=e.target.name;
@@ -25,9 +27,23 @@ const handleFormChange=(e)=>{
     setformData((prev)=>({...prev,[fieldName]:fieldVal}))
 }
 
+const validation= () => {
+  return true;
+}
+
+const handleFormSubmit=(e)=>{
+    e.preventDefault();
+    if(validation){
+      console.log(formData);
+    }
+    else{
+      alert("Form filled incorrectly")
+    }
+}
+
     return (
       <div>
-        <section>
+        <section style={{margin:"1%"}}>
           <img
             src={srijanLogo}
             style={{
@@ -56,10 +72,12 @@ const handleFormChange=(e)=>{
                   />
                 </div>
               </Col>
-              <Col xs={24} md={16} xl={8}>
+              <Col xs={24} md={16} xl={10}>
                 <Form
                   layout="vertical"
-                  style={{ animation: "fadeIn 4s ease-in", margin: "5%" }}>
+                  style={{ animation: "fadeIn 4s ease-in", margin: "5%" }}
+                  onSubmit={e => handleFormSubmit(e)}
+                >
                   <Form.Item label="Full Name">
                     <Input
                       required={true}
@@ -87,18 +105,36 @@ const handleFormChange=(e)=>{
                       onChange={(e) => handleFormChange(e)}
                     />
                   </Form.Item>
+                  <Form.Item label="Department">
+                    <Input
+                      required={true}
+                      type="text"
+                      placeholder="Enter your phone number"
+                      name="department"
+                      onChange={(e) => handleFormChange(e)}
+                    />
+                  </Form.Item>
+                  <Form.Item label="College">
+                    <Input
+                      required={true}
+                      type="text"
+                      placeholder="Enter your college name"
+                      name="college"
+                      onChange={(e) => handleFormChange(e)}
+                    />
+                  </Form.Item>
                   <Form.Item label="Name on TShirt">
                     <Input
                       required={true}
                       type="text"
-                      placeholder="Enter the name to be printed at the back"
+                      placeholder="Enter the name to be printed at the back (eg: Archit, GameGuru, etc)"
                       name="name_on_tshirt"
                       onChange={(e) => handleFormChange(e)}
                     />
                   </Form.Item>
                   <Form.Item label="Tshirt color">
                     <Select
-                      placeholder="Choose Tshirt color"
+                      defaultValue="black"
                       optionFilterProp="children"
                       required={true}
                       name="tshirt_color"
@@ -111,7 +147,7 @@ const handleFormChange=(e)=>{
                   </Form.Item>
                   <Form.Item label="TShirt Size">
                     <Select
-                      placeholder="Choose Tshirt size"
+                      defaultValue="m"
                       optionFilterProp="children"
                       required={true}
                       name="tshirt_size"
@@ -126,7 +162,7 @@ const handleFormChange=(e)=>{
                     </Select>
                   </Form.Item>
                   <Form.Item>
-                    <Button type="primary" htmlType="submit">
+                    <Button type="primary" htmlType="submit" >
                       Proceed to checkout
                     </Button>
                   </Form.Item>
