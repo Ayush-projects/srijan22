@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import {Typography, Input, Button, Row, Col, Form, Select, Radio} from 'antd';
+import {Typography, Input, Button, Row, Col, Form, Select, Radio,notification} from 'antd';
 import srijanLogo from '../../assets/Images/srijan_logo_white.png';
 import JULogo from '../../assets/Images/Jadavpur_University_Logo.svg';
 import blackTShirt from '../../assets/Images/black-web.jpg'
@@ -15,7 +15,12 @@ const Merchandise22 = props => {
     // Cross realm comptatible
     return Object.prototype.toString.call(val) === '[object Date]'
   }
-  
+  const openNotificationWithIcon = (type, message, desc )=> {
+    notification[type]({
+      message: message,
+      description:desc
+    });
+  };
   function isObj(val) {
     return typeof val === 'object'
   }
@@ -82,37 +87,68 @@ const handlePaymentMode = (e) => {
 const handleFormSubmit=(e)=>{
     e.preventDefault();
     if(validation){
-      const url = process.env.REACT_APP_SRIJAN22_tshirtBackendUrl+"/api/payment";
-      const options = {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json;charset=UTF-8",
-        },
-        body: JSON.stringify({
-          ...formData, amount: 400
-      }),
-      };
-      fetch(url, options)
-        .then((response) => response.json())
-        .then((data) => {
-          try{
-            var information={
-              action:`https://securegw-stage.paytm.in/theia/api/v1/showPaymentPage?mid=${data.mid}&orderId=${data.orderId}`,
-              params:{
-                orderId: data.orderId,
-                txnToken: data.initiate_tran_resp.body.txnToken,
-                mid:data.mid
+      if(formData.payment_mode==="online"){
+        const url = process.env.REACT_APP_SRIJAN22_tshirtBackendUrl+"/api/payment";
+        const options = {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json;charset=UTF-8",
+          },
+          body: JSON.stringify({
+            ...formData, amount: 1
+        }),
+        };
+        fetch(url, options)
+          .then((response) => response.json())
+          .then((data) => {
+            if(data.code===409){
+              openNotificationWithIcon('error','User Already Exists','Only one tshirt can be booked by one user.')
+            }else if(data.code===500){
+              openNotificationWithIcon('error','Unknown Error','Some unknown error occured. Try again.')
+            }
+            else if(data.code===200){
+              try{
+                var information={
+                  action:`https://securegw.paytm.in/theia/api/v1/showPaymentPage?mid=${data.mid}&orderId=${data.orderId}`,
+                  params:{
+                    orderId: data.orderId,
+                    txnToken: data.initiate_tran_resp.body.txnToken,
+                    mid:data.mid
+                  }
               }
-          }
-           post(information)
-          }
-          catch(err){
-            console.log(err)
-          }
-          console.log(data);
-        });
-      console.log(formData);
+               post(information)
+              }
+              catch(err){
+                console.log(err)
+              }
+            }
+            
+          });
+      }else if(formData.payment_mode==="offline"){
+        const url = process.env.REACT_APP_SRIJAN22_tshirtBackendUrl+"/api/add_reg_data";
+        const options = {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json;charset=UTF-8",
+          },
+          body: JSON.stringify(formData),
+        };
+        fetch(url, options)
+          .then((response) => response.json())
+          .then((data) => {
+            if(data.code===409){
+              openNotificationWithIcon('error','User Already Exists','Only one tshirt can be booked by one user.')
+            }else if(data.code===500){
+              openNotificationWithIcon('error','Unknown Error','Some unknown error occured. Try again.')
+            }  else if(data.code===200){
+              openNotificationWithIcon('success','Success','You are registered successfully.')
+            }
+            }
+          );
+      }
+    
     }
     else{
       alert("Form filled incorrectly")
@@ -245,6 +281,10 @@ const handleFormSubmit=(e)=>{
                     <Radio value="offline">Cash</Radio>
                   </Radio.Group>
                   </Form.Item>
+                  {/* <Form.Item>
+                    <h4 style={{color: "white", display: "inline-block", marginLeft: "3px"}}>Pay</h4>
+                    Pay Now <input type="radio" style={{marginLeft: "3px"}}/> 
+                  </Form.Item> */}
                   <Form.Item>
                     <Button type="primary" htmlType="submit">
                       {submitBtnText}
