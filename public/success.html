@@ -130,9 +130,19 @@
           <tr>
               <td bgcolor="#f4f4f4" align="center" style="padding: 0px 10px 0px 10px;">
                   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+                    <tr>
+                        <td bgcolor="#ffffff" align="left" style="color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+                            <p style="margin: 0; text-align: center;" id="orderId"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#ffffff" align="left" style="padding: 10px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+                            <p style="margin: 0; text-align: center;" id="transID"></p>
+                        </td>
+                    </tr>
                       <tr>
                           <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 40px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
-                              <p style="margin: 0; text-align: center;">Order placed successfully, you'll receive confirmation mail very soon.</p>
+                              <p style="margin: 0; text-align: center;">Order placed successfully, you'll receive confirmation mail very soon. Copy and save the above details for future use.</p>
                           </td>
                       </tr>
                       <tr>
@@ -173,6 +183,16 @@
          
       </table>
       <script>
+          const params = new URLSearchParams(window.location.search);
+          var order_id, trans_id;
+          if(params.has('order_id')){
+              order_id=params.get('order_id')
+          }
+          if(params.has('trans_id')){
+            trans_id=params.get('trans_id')
+          }
+          document.getElementById('orderId').innerHTML="Your Order ID: "+order_id; 
+          document.getElementById('transID').innerHTML="Your Transaction ID: "+trans_id; 
          </script>
       
   </body>

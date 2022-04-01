@@ -96,7 +96,7 @@ const handleFormSubmit=(e)=>{
             "Content-Type": "application/json;charset=UTF-8",
           },
           body: JSON.stringify({
-            ...formData, amount: 1
+            ...formData, amount: 399
         }),
         };
         fetch(url, options)
