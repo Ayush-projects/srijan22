@@ -106,7 +106,7 @@ const Landing = props => {
                         14th -17th April
                     </Title>
                     <span className="btn"
-                          onClick={() => window.open("https://www.srijanju.in/merchandise", "_self")}>
+                          onClick={() => window.open("/merchandise", "_self")}>
                    <p
               style={{padding: 0, margin: 0, color: 'white'}}> Srijan'22 Merchandise</p>
              

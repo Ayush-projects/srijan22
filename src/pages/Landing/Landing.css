@@ -1,5 +1,6 @@
 .landing {
   height: 100vh;
+  width: 100vw;
   background: radial-gradient(circle, rgba(0, 0, 0, .25), rgba(0, 0, 0, .5)), url(../../assets/Images/bg-landing.jpg);
   background-size: cover;
   background-attachment: fixed;
