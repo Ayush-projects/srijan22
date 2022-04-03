@@ -80,7 +80,7 @@ const handlePaymentMode = (e) => {
   // if(e.target.value==="online"){
   //   setsubmitBtnText("Proceed to checkout")
   // }else if(e.target.value==="offline"){
-    setsubmitBtnText("Register")
+    setsubmitBtnText("Register here")
   // }
   setformData((prev) => ({ ...prev, payment_mode: e.target.value }))
 }
