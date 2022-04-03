@@ -64,9 +64,9 @@ const [formData, setformData] = useState({
     name_on_tshirt: '',
     tshirt_color: 'black',
     tshirt_size: 'm',
-    payment_mode: 'online'
+    payment_mode: 'offline'
 })
-const [submitBtnText, setsubmitBtnText] = useState("Proceed to checkout")
+const [submitBtnText, setsubmitBtnText] = useState("Register here")
 const handleFormChange=(e)=>{
     const fieldName=e.target.name;
     const fieldVal=e.target.value;
