@@ -66,7 +66,7 @@ const [formData, setformData] = useState({
     tshirt_size: 'm',
     payment_mode: 'online'
 })
-const [submitBtnText, setsubmitBtnText] = useState("Proceed to checkout")
+const [submitBtnText, setsubmitBtnText] = useState("Register")
 const handleFormChange=(e)=>{
     const fieldName=e.target.name;
     const fieldVal=e.target.value;
@@ -77,11 +77,11 @@ const validation= () => {
   return true;
 }
 const handlePaymentMode = (e) => {
-  if(e.target.value==="online"){
-    setsubmitBtnText("Proceed to checkout")
-  }else if(e.target.value==="offline"){
-    setsubmitBtnText("Register here")
-  }
+  // if(e.target.value==="online"){
+  //   setsubmitBtnText("Proceed to checkout")
+  // }else if(e.target.value==="offline"){
+    setsubmitBtnText("Register")
+  // }
   setformData((prev) => ({ ...prev, payment_mode: e.target.value }))
 }
 const handleFormSubmit=(e)=>{
@@ -144,6 +144,7 @@ const handleFormSubmit=(e)=>{
               openNotificationWithIcon('error','Unknown Error','Some unknown error occured. Try again.')
             }  else if(data.code===200){
               openNotificationWithIcon('success','Success','You are registered successfully.')
+              setTimeout(()=>{window.location.href="/"}, 2000)
             }
             }
           );
@@ -281,10 +282,11 @@ const handleFormSubmit=(e)=>{
                     <Radio value="offline">Cash</Radio>
                   </Radio.Group>
                   </Form.Item>
-                  {/* <Form.Item>
-                    <h4 style={{color: "white", display: "inline-block", marginLeft: "3px"}}>Pay</h4>
-                    Pay Now <input type="radio" style={{marginLeft: "3px"}}/> 
-                  </Form.Item> */}
+                  <Form.Item>
+                    <h4 style={{color: "white"}}>For offline payment, please contact:</h4>
+                    <h4 style={{color: "white"}}>Trishit Pal: 9831660378</h4>
+                    <h4 style={{color: "white"}}>Suvankar: 7001082597</h4>
+                  </Form.Item>
                   <Form.Item>
                     <Button type="primary" htmlType="submit">
                       {submitBtnText}
