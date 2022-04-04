@@ -21,15 +21,7 @@ const Register = props => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const handleGoogleSignIn = () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth().signInWithRedirect(provider);
-  }
 
-  const handleFacebookSignIn = () => {
-    const provider = new firebase.auth.FacebookAuthProvider();
-    firebase.auth().signInWithRedirect(provider);
-  }
 
   const handleRegister = useCallback(async (userName, email, password, year, department, college) => {
     try {
@@ -106,12 +98,7 @@ const Register = props => {
       <br /><br />
       Already have an account?&nbsp;<span className="mock-form-link" onClick={e => setShowForm('login')}>Login</span>
       <hr />
-      <div className="altSignIn" onClick={handleGoogleSignIn}>
-        <Icon type="google" /> Sign In with Google
-      </div>
-      <div className="altSignIn" onClick={handleFacebookSignIn}>
-        <Icon type="facebook" /> Sign In with Facebook
-      </div> 
+     
     </Form>
   );
 }

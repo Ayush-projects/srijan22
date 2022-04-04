@@ -9,7 +9,6 @@ import { Row, Col, Card } from 'antd';
 import srijanTshirtMockup from '../../assets/Images/srijan_tshirt_mockup.png';
 import './Merchandise.css';
 
-console.log("Test");
 
 // const { confirm } = Modal;
 

@@ -20,15 +20,7 @@ const Login = props => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const handleGoogleSignIn = () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth().signInWithRedirect(provider);
-  }
-
-  const handleFacebookSignIn = () => {
-    const provider = new firebase.auth.FacebookAuthProvider();
-    firebase.auth().signInWithRedirect(provider);
-  }
+  
 
   const handleSignIn = useCallback(async (email, password) => {
     try {
@@ -78,12 +70,7 @@ const Login = props => {
       <span className="mock-form-link" onClick={e => setShowForm('register')}>Create an account</span>&nbsp;&nbsp;|&nbsp;&nbsp;
       <span className="mock-form-link" onClick={e => setShowForm('forgot-password')}>Forgot/Reset Password?</span>
       <hr />
-      <div className="altSignIn" onClick={handleGoogleSignIn}>
-        <Icon type="google" /> Sign In with Google
-      </div>
-      <div className="altSignIn" onClick={handleFacebookSignIn}>
-        <Icon type="facebook" /> Sign In with Facebook
-      </div> 
+     
     </Form>
   );
 } 
