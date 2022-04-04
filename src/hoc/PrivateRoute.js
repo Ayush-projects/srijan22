@@ -6,10 +6,15 @@ import { LastLocationContext } from '../context/lastLocationContext';
 const PrivateRoute = ({component: Component, path: Path, ...rest}) => {
   const { currentUser } = useContext(AuthContext);
   const { location } = rest;
+
   const { setLastLocation } = useContext(LastLocationContext);
 
   if (!currentUser && location.pathname.includes('/app/')) {
-    setLastLocation(location.pathname);
+    setTimeout(()=>{
+     
+      setLastLocation(location.pathname);
+    }, 1000)
+    
   }
 
   return (
