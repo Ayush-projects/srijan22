@@ -5,24 +5,25 @@ import 'firebase/database';
 
 const secondaryAppConfig = {
   apiKey: process.env.REACT_APP_SRIJAN20_DB_apiKey,
-  authDomain: process.env.REACT_APP_SRIJAN20_DB_authDomain,
+  authDomain: process.env.REACT_APP_SRIJAN20__authDomain,
   databaseURL: process.env.REACT_APP_SRIJAN20_DB_databaseURL,
   projectId: process.env.REACT_APP_SRIJAN20_DB_projectId,
   storageBucket: process.env.REACT_APP_SRIJAN20_DB_storageBucket,
   messagingSenderId: process.env.REACT_APP_SRIJAN20_DB_messagingSenderId,
   appId: process.env.REACT_APP_SRIJAN20_DB_appId
 };
-console.log(secondaryAppConfig)
+
 // Initialize another app with a different config
 var secondary = firebase.initializeApp(secondaryAppConfig);
 // Retrieve the database.
-var secondaryDatabase = secondary.database();
+var secondaryDatabase = secondary.database()
 export const database = secondaryDatabase;
+
 
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_SRIJAN20_apiKey,
-  authDomain: process.env.REACT_APP_SRIJAN20_authDomain,
+  authDomain: process.env.REACT_APP_SRIJAN20__authDomain,
   databaseURL: process.env.REACT_APP_SRIJAN20_databaseURL,
   projectId: process.env.REACT_APP_SRIJAN20_projectId,
   storageBucket: process.env.REACT_APP_SRIJAN20_storageBucket,

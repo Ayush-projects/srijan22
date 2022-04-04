@@ -5,6 +5,7 @@ import { writeUserData } from '../firebase/utility';
 export const AuthContext = React.createContext({ currentUser: null });
 
 const AuthContextProvider = props => {
+
   const [currentUser, setCurrentUser] = useState(null);
 
   useEffect(() => {

@@ -19,6 +19,7 @@ const App = props => {
   const [userName, setUserName] = useState('');
 
   useEffect(() => {
+  
     if (currentUser) {
       getUsernameFromDatabase(currentUser.uid)
         .then(usr => {
@@ -34,7 +35,7 @@ const App = props => {
         })
         .catch(err => console.log(err));
     } else {
-      console.log('user not signed in');
+      // console.log('user not signed in');
     }
   }, [currentUser, history, lastLocation]);
 
@@ -53,7 +54,7 @@ const App = props => {
   return (
     <Switch>
       <Route path='/' exact render={props => <LandingPage isAuthenticated={isAuthenticated} username={userName} />} />
-      <Route path='/merchandise' exact render={props => <Merchandise22 />} />
+      {/* <Route path='/merchandise' exact render={props => <Merchandise22 />} /> */}
       <PrivateRoute
         component={AppLayout}
         path='/app'

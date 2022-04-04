@@ -1,6 +1,5 @@
 .landing {
   height: 100vh;
-  width: 100vw;
   background: radial-gradient(circle, rgba(0, 0, 0, .25), rgba(0, 0, 0, .5)), url(../../assets/Images/bg-landing.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -11,23 +10,6 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-}
-.wise-iframe-wrapper {
-  position: relative;
-  padding-bottom: 56.10%;
-  height: 0;
-  overflow: hidden;
-}
-a { color: inherit; } 
-
-.wise-iframe-wrapper iframe,
-.wise-iframe-wrapper object,
-.wise-iframe-wrapper embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .particles {
@@ -95,22 +77,9 @@ a { color: inherit; }
   background-image: url(https://robertsspaceindustries.com/rsi/static/images/content-page/horizontal-lined-bg.png);
   padding: 1rem 2rem;
   color: #00ebff;
-  margin: 1.5rem;
+  margin: .3rem;
   display: inline-block;
   border-left: .2rem solid #00ebff;
-  position: relative;
-  overflow: hidden;
-  text-indent: 0;
-}
-.btn1{
-  cursor: context-menu;
-  background-color: rgba(22, 104, 159, 0);
-  background-image: url(https://robertsspaceindustries.com/rsi/static/images/content-page/horizontal-lined-bg.png);
-  padding: 1rem 2rem;
-  color: #00ebff;
-  margin: .5rem;
-  display: inline-block;
-  
   position: relative;
   overflow: hidden;
   text-indent: 0;
