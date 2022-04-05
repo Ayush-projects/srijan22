@@ -63,29 +63,29 @@ const Dashboard = props => {
       </Row>
       <Row>
         <Col lg={24} className="flex-container" style={{ padding: '.5rem', textAlign: 'center' }}>
-          <Card title="Srijan 20 schedule"
+          <Card title="Srijan 22 schedule"
                 headStyle={{ backgroundColor: 'rgba(22, 104, 159, 0.3)', borderBottom: '2px solid #00ebff', color: '#00ebff' }}
                 bodyStyle={{ backgroundColor: 'rgba(22, 104, 159, 0.2)', border: 'none' }}
                 style={{ width: '100%', backgroundColor: 'transparent', border: 'none' }}>
             <Row>
               <Col lg={12}>
                 <div className="dashboard-img-container">
-                  <img alt="Srijan 20 schedule" src={scheduleOne} />
+                  <img alt="Srijan 22 schedule" src={scheduleOne} />
                 </div>
               </Col>
               <Col lg={12}>
                 <div className="dashboard-img-container">
-                  <img alt="Srijan 20 schedule" src={scheduleTwo} />
+                  <img alt="Srijan 22 schedule" src={scheduleTwo} />
                 </div>
               </Col>
               <Col lg={12}>
                 <div className="dashboard-img-container">
-                  <img alt="Srijan 20 schedule" src={scheduleThree} />
+                  <img alt="Srijan 22 schedule" src={scheduleThree} />
                 </div>
               </Col>
               <Col lg={12}>
                 <div className="dashboard-img-container">
-                  <img alt="Srijan 20 schedule" src={scheduleFour} />
+                  <img alt="Srijan 22 schedule" src={scheduleFour} />
                 </div>
               </Col>
             </Row>
@@ -94,7 +94,7 @@ const Dashboard = props => {
       </Row>
       <Row >
         <Col lg={12} className="flex-container" style={{ padding: '.5rem', textAlign: 'center' }}>
-          <Card title="Srijan 20 events"
+          <Card title="Srijan 22 events"
                 headStyle={{ backgroundColor: 'rgba(22, 104, 159, 0.3)', borderBottom: '2px solid #00ebff', color: '#00ebff' }}
                 bodyStyle={{ backgroundColor: 'rgba(22, 104, 159, 0.2)', border: 'none' }}
                 style={{ width: '100%', backgroundColor: 'transparent', border: 'none' }}>
@@ -102,12 +102,12 @@ const Dashboard = props => {
           </Card>
         </Col>
         <Col lg={12} className="flex-container" style={{ padding: '.5rem', textAlign: 'center' }}>
-          <Card title="Download the official Srijan 20 app"
+          <Card title="Download the official Srijan 22 app"
                 headStyle={{backgroundColor: 'rgba(22, 104, 159, 0.3)', borderBottom: '2px solid #00ebff', color: '#00ebff' }}
                 bodyStyle={{backgroundColor: 'rgba(22, 104, 159, 0.2)', border: 'none' }}
                 className="dashboard-app-section">
             <div className="dashboard-app-img-container">
-              <img alt="Srijan 20 app" src={SrijanAppImage} />
+              <img alt="Srijan 22 app" src={SrijanAppImage} />
             </div>
             <a href='https://play.google.com/store/apps/details?id=in.srijanju.androidapp&hl=en_us&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
               <img alt='Get it on Google Play' src={GooglePlayBadge} width="175px"/>
