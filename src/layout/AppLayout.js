@@ -90,7 +90,7 @@ const AppLayout = props => {
           </Dropdown.Button>
         </span>
       </Header>
-      <Layout style={{ background: 'transparent' }}>
+      <Layout style={{ background: 'transparent', zIndex: '500' }}>
         <Sider className="dashboard-sider">
           <Menu mode="inline" className="dashboard-sider-menu">
             {routes.map((route, index) => {
