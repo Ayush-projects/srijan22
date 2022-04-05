@@ -295,8 +295,59 @@ const handleFormSubmit=(e)=>{
                 </Form>
               </Col>
             </Row>
+
           </div>
         </section>
+        <footer id="site-footer">
+
+
+
+          <section class="horizontal-footer-section" id="footer-middle-section">
+            <div id="footer-about" class="footer-columns footer-columns-large">
+              <h1>Our Address</h1>
+              <address>
+                <p><img src="https://img.icons8.com/ios-filled/14/eeeeee/marker.png"/> B-73-80, Plot No.8, Salt Lake Bypass, LB Block, Sector III, Bidhannagar, Kolkata, West Bengal 700098</p>
+                  <p><img src="https://img.icons8.com/ios-filled/14/eeeeee/phone.png"/>+91 89104 82988</p>
+                    <p><img src="https://img.icons8.com/ios-filled/14/eeeeee/mail.png"/>architranjan9@gmail.com</p>
+                      <p><img src="https://img.icons8.com/ios-filled/14/eeeeee/clock.png"/>8:00 AM – 8:00 PM</p>
+            </address>
+            
+        </div>
+                    <div class="footer-columns">
+                    </div>
+                    <div class="footer-columns">
+                    </div>
+                    <div class="footer-columns">
+                      <h1>Information</h1>
+                      <ul class="footer-column-menu" role="menu">
+                        <li class="footer-column-menu-item" role="menuitem">
+                          <a href="https://github.com/Ayush-projects/srijan22/blob/main/README.md" class="footer-column-menu-item-link">About Us</a>
+                        </li>
+                        <li class="footer-column-menu-item" role="menuitem">
+                          <a href="https://raw.githubusercontent.com/Ayush-projects/srijan22/cfd7d3a2a0607b21ea45dd9ff71140e404164a0b/Srijan_Privacy_Policy.pdf" class="footer-column-menu-item-link">Privacy Policy</a>
+                        </li>
+
+
+                        <li class="footer-column-menu-item" role="menuitem">
+                          <a href="https://raw.githubusercontent.com/Ayush-projects/srijan22/a8458946a871ead56f47b91b94e029204ece1383/Srijan_Terms_and_Conditions.pdf" class="footer-column-menu-item-link">Terms and Conditions</a>
+                        </li>
+                        <li class="footer-column-menu-item" role="menuitem">
+                          <a href="https://raw.githubusercontent.com/Ayush-projects/srijan22/a8458946a871ead56f47b91b94e029204ece1383/Srijan_Refund_and_Cancellation.pdf" class="footer-column-menu-item-link">Refund Policy</a>
+                        </li>
+                      </ul>
+                    </div>
+    </section>
+
+                  <section class="horizontal-footer-section" id="footer-bottom-section">
+                    <div id="footer-copyright-info">
+                      &copy; Copyright SrijanJU 2022
+        </div>
+
+                  </section>
+
+</footer>
+
+
       </div>
     );
 }
