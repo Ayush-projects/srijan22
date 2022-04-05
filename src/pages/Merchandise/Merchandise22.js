@@ -250,7 +250,6 @@ const handleFormSubmit=(e)=>{
                   </Form.Item>
                   <Form.Item label="Name on TShirt">
                     <Input
-                      required={true}
                       type="text"
                       placeholder="Enter the name to be printed at the back (eg: Archit, GameGuru, etc)"
                       name="name_on_tshirt"
