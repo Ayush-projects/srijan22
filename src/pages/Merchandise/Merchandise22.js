@@ -289,7 +289,7 @@ const handleFormSubmit=(e)=>{
                   <Form.Item label="Payment Mode">
                   <Radio.Group onChange={(e)=>handlePaymentMode(e)} value={formData.payment_mode}>
                     {/* <Radio value="online">Online</Radio> */}
-                    <Radio value="offline">Cash</Radio>
+                    <Radio value="offline">Cash/UPI</Radio>
                   </Radio.Group>
                   </Form.Item>
                   <Form.Item>
