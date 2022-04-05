@@ -16,7 +16,7 @@ const AppLayout = props => {
   const onDrawerClose = () => setDrawerVisible(false);
 
   const dropdownMenu = (
-    <Menu className="nav-dropdown-menu">
+    <Menu className="nav-dropdown-menu" >
       <Menu.Item key="1" onClick={handleSignOut}>
         <Icon type="logout" />
         Logout
@@ -81,16 +81,16 @@ const AppLayout = props => {
           })}
         </Menu>
       </Drawer>
-      <Header className="navigation" theme="dark">
+      <Header className="navigation" theme="dark" style={{ padding: '1rem', zIndex: 300 }}>
         <Icon type="menu" className="appdrawer-icon" onClick={e => setDrawerVisible(true)} />
         <span className="nav-brand"><img src={srijanLogoWhite} width="200px" alt="srijan logo" /></span>
         <span className="nav-right">
-          <Dropdown.Button className="dropdown-btn" overlay={dropdownMenu}>
+          <Dropdown.Button className="dropdown-btn" overlay={dropdownMenu} style={{ padding: '1rem', zIndex: 300 }}>
             <Icon type="user" /> ({username})
           </Dropdown.Button>
         </span>
       </Header>
-      <Layout style={{ background: 'transparent', zIndex: '500' }}>
+      <Layout style={{ background: 'transparent',  zIndex: '500' }}>
         <Sider className="dashboard-sider">
           <Menu mode="inline" className="dashboard-sider-menu">
             {routes.map((route, index) => {
