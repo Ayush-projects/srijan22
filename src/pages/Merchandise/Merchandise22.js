@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import {Typography, Input, Button, Row, Col, Form, Select, Radio,notification} from 'antd';
+import {Typography, Input, Button, Row, Col, Form, Select, Radio,notification, Modal} from 'antd';
 import srijanLogo from '../../assets/Images/srijan_logo_white.png';
 import JULogo from '../../assets/Images/Jadavpur_University_Logo.svg';
 import blackTShirt from '../../assets/Images/black-web.jpg'
@@ -72,7 +72,17 @@ const handleFormChange=(e)=>{
     const fieldVal=e.target.value;
     setformData((prev)=>({...prev,[fieldName]:fieldVal}))
 }
+const [isModalVisible, setIsModalVisible] = useState(false);
 
+const showModal = () => {
+  setIsModalVisible(true);
+};
+
+
+const handleCancel = () => {
+  setIsModalVisible(false);
+  setTimeout(()=>{window.location.href="/"}, 2000)
+};
 const validation= () => {
   return true;
 }
@@ -80,7 +90,7 @@ const handlePaymentMode = (e) => {
   // if(e.target.value==="online"){
   //   setsubmitBtnText("Proceed to checkout")
   // }else if(e.target.value==="offline"){
-    setsubmitBtnText("Register")
+    setsubmitBtnText("Register here")
   // }
   setformData((prev) => ({ ...prev, payment_mode: e.target.value }))
 }
@@ -144,7 +154,7 @@ const handleFormSubmit=(e)=>{
               openNotificationWithIcon('error','Unknown Error','Some unknown error occured. Try again.')
             }  else if(data.code===200){
               openNotificationWithIcon('success','Success','You are registered successfully.')
-              setTimeout(()=>{window.location.href="/"}, 2000)
+              setTimeout(()=>{showModal()}, 2000)
             }
             }
           );
@@ -279,7 +289,7 @@ const handleFormSubmit=(e)=>{
                   <Form.Item label="Payment Mode">
                   <Radio.Group onChange={(e)=>handlePaymentMode(e)} value={formData.payment_mode}>
                     {/* <Radio value="online">Online</Radio> */}
-                    <Radio value="offline">Cash</Radio>
+                    <Radio value="offline">Cash/UPI</Radio>
                   </Radio.Group>
                   </Form.Item>
                   <Form.Item>
@@ -348,6 +358,30 @@ const handleFormSubmit=(e)=>{
 </footer>
 
 
+          <Modal title="Steps After Registration" visible={isModalVisible} footer={null} onCancel={handleCancel}>
+          <p>Hi, thanks for registering for the Srijan'22 official merchandise.<br></br>
+
+          To confirm your order please make a payment of ₹ 399/- via cash or UPI by 5th April, 2022 to : <br></br>
+          Avirup(9330143110) -For Jadavpur Campus<br></br>
+
+          Trishit(9831660378) -For Salt Lake Campus<br></br>
+
+          Send a screenshot of payment to them over Whatsapp positively(if paid via UPI) <br></br>
+
+          For cash payment - a message from their end will be given "Cash_Payment confirmed" over WhatsApp at the end of the day.<br></br>
+
+          Note : Please collect your t-shirts within 15th -17th April from the t-shirt stall in Jadavpur University Salt Lake Campus, during Srijan. <br></br>
+
+          For any other queries please WhatsApp the aforementioned or send an email to srijanju.contact@gmail.com<br></br>
+
+          Please check out our events at-<a href='https://srijanju.in/video.html'> https://srijanju.in/video.html</a><br></br>
+
+          Released events at-<a href='https://instagram.com/srijan_ju?utm_medium=copy_link'>https://instagram.com/srijan_ju?utm_medium=copy_link</a><br></br>
+
+          Regards<br></br>
+          Team Srijan'22
+          </p>
+        </Modal>
       </div>
     );
 }
