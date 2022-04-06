@@ -46,11 +46,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  animation: fadeIn 2s ease-in;
+  animation: fadeIn 1s ease-in;
 }
 
 .landing-actions-main {
-  animation: fadeIn 4s ease-in;
+ 
 }
 
 .landing-form {
@@ -101,9 +101,9 @@
 
 p:hover{
   opacity: 1;
-  -webkit-transition: all .3s;
+  /* -webkit-transition: all .3s;
   -moz-transition: all .3s;
-  transition: all .3s;
+  transition: all .3s; */
 }
 
 .btn p{
@@ -120,9 +120,9 @@ p:hover{
     height: 100%;
     width: 0;
     z-index: 1;
-    -webkit-transition: all .4s;
+    /* -webkit-transition: all .4s;
     -moz-transition: all .4s;
-    transition: all .4s;
+    transition: all .4s; */
     background: rgba(10, 24, 34, 0.8);
 }
 
@@ -134,9 +134,9 @@ p:hover{
 
 .btn:hover{
   color: #ffae00;
-  -webkit-transition: all .3s;
+  /* -webkit-transition: all .3s;
   -moz-transition: all .3s;
-  transition: all .3s;
+  transition: all .3s; */
 }
 
 .fgimg{

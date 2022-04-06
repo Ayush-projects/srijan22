@@ -79,6 +79,7 @@ const Landing = props => {
                                        "mode": "repulse"
                                    }
                                },
+
                                "modes": {
                                    "repulse": {
                                        "particles_nb": 10
@@ -121,12 +122,12 @@ const Landing = props => {
                 </span>
               </Link>) : (
               <>
-                {/* <span className="btn" style={{ marginRight: '1rem' }} onClick={e => setShowForm('login')}>
-                  <p style={{ padding: 0, margin: 0 }}>Login</p>
+                <span className="btn" style={{ marginRight: '1rem' , transition:'none'}} onClick={e => setShowForm('login')}>
+                  <p style={{ padding: 0, margin: 0, color: "white"}}>Login</p>
                 </span>
                 <span className="btn" onClick={e => setShowForm('register')}>
-                  <p style={{ padding: 0, margin: 0 }}>Register</p>
-                </span> */}
+                  <p style={{ padding: 0, margin: 0 , color: "white", transition: 'none'}}>Register</p>
+                </span>
               </>
             )}
 
