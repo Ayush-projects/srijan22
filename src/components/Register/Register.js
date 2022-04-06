@@ -44,7 +44,7 @@ const Register = props => {
     const yearSuffix = ["st", "nd", "rd", "th", "th"];
     const { username, email, password, year, department, college } = e.target.elements;
     if (isValid(email.value, password.value)) {
-      handleRegister(username.value, email.value, password.value, year.value + yearSuffix[year.value], department.value, college.value);
+      handleRegister(username.value, email.value, password.value, year.value + yearSuffix[year.value-1], department.value, college.value);
       setFormError(false);
     } else {
       setFormError(true);
@@ -80,7 +80,7 @@ const Register = props => {
         <Input
           name="year"
           type="number"
-          min={1} max={4}
+          min={1} max={5}
           prefix={<Icon type="read" style={{ color: 'rgba(255,255,255,.7)' }} />}
           placeholder="Year" />
       </Form.Item>

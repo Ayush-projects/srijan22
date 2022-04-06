@@ -67,7 +67,7 @@ const Profile = props => {
                     className="profile-input"
                     name="year"
                     type="number"
-                    min={1} max={4}
+                    min={1} max={5}
                     value={inputYear}
                     onChange={e => setInputYear(e.target.value)}
                     prefix={<Icon type="read" style={{ color: '#00ebff' }} />}

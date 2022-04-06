@@ -104,12 +104,12 @@ const Landing = props => {
                         marginTop: '-1.25rem',
                         marginBottom: '.75rem'
                     }}>
-                        14th -17th April
+                        14th - 17th April
                     </Title>
                     <span className="btn"
                           onClick={() => window.open("/merchandise", "_self")}>
                    <p
-              style={{padding: 0, margin: 0, color: 'white'}}> Srijan'22 Merchandise</p>
+              style={{padding: 0, margin: 0, color: 'white'}}> Srijan '22 Merchandise</p>
              
         </span>
        

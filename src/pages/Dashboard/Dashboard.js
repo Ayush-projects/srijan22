@@ -94,7 +94,7 @@ const Dashboard = props => {
       </Row>
       <Row style={{display: "block", }}>
         <Col lg={12} className="flex-container" style={{ padding: '.5rem', textAlign: 'center' }}>
-          <Card title="Srijan 22 events"
+          <Card title="Srijan '22 Events"
                 headStyle={{ backgroundColor: 'rgba(22, 104, 159, 0.3)', borderBottom: '2px solid #00ebff', color: '#00ebff' }}
                 bodyStyle={{ backgroundColor: 'rgba(22, 104, 159, 0.2)', border: 'none' }}
                 style={{ width: '100%', backgroundColor: 'transparent', border: 'none' }}>
@@ -102,7 +102,7 @@ const Dashboard = props => {
           </Card>
         </Col>
         <Col lg={12} className="flex-container" style={{ padding: '.5rem', textAlign: 'center' }}>
-          <Card title="Srijan 22"
+          <Card title="Srijan '22 Merchandise"
                 headStyle={{backgroundColor: 'rgba(22, 104, 159, 0.3)', borderBottom: '2px solid #00ebff', color: '#00ebff' }}
                 bodyStyle={{backgroundColor: 'rgba(22, 104, 159, 0.2)', border: 'none' }}
                 className="dashboard-app-section">
