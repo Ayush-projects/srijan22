@@ -121,12 +121,12 @@ const Landing = props => {
                 </span>
               </Link>) : (
               <>
-                <span className="btn" style={{ marginRight: '1rem' }} onClick={e => setShowForm('login')}>
+                {/* <span className="btn" style={{ marginRight: '1rem' }} onClick={e => setShowForm('login')}>
                   <p style={{ padding: 0, margin: 0 }}>Login</p>
                 </span>
                 <span className="btn" onClick={e => setShowForm('register')}>
                   <p style={{ padding: 0, margin: 0 }}>Register</p>
-                </span>
+                </span> */}
               </>
             )}
 
