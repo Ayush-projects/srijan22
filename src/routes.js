@@ -29,13 +29,13 @@ export const routes = [
   //   routeName: 'Merchandise',
   //   icon: 'shopping'
   // },
-  {
-    path: '/talks',
-    component: TalksPage,
-    layout: '/app',
-    routeName: 'Talks',
-    icon: 'audio'
-  },
+  // {
+  //   path: '/talks',
+  //   component: TalksPage,
+  //   layout: '/app',
+  //   routeName: 'Talks',
+  //   icon: 'audio'
+  // },
   // {
   //   path: '/team',
   //   component: TeamPage,
