@@ -51,7 +51,7 @@ const Login = props => {
 
   return (
     <Form onSubmit={handleSubmit} className="login-form">
-      <h1>Srijan 20 | Login</h1>
+      <h1>Srijan 22 | Login</h1>
       {formError ? <Alert message="Invalid email or password!" type="error" /> : null}
       {error ? <Alert message={error.message} type="error" /> : null}
       <hr /><br />

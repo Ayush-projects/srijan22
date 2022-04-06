@@ -63,7 +63,7 @@ const EventRegistrationForm = props => {
           className="event-reg-input"
           name="teamname"
           prefix={<Icon type="user" style={{ color: '#222' }} />}
-          placeholder="Team Name" />
+          placeholder="Team Name(No Space Allowed)" />
       </Form.Item>
       <Form.Item label="Team leader email" labelCol={{ span: 8 }} wrapperCol={{ span: 16 }}>
         <Input
