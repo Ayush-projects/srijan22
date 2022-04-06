@@ -62,7 +62,7 @@ const Dashboard = props => {
         </Col>
       </Row>
       <Row>
-        <Col lg={24} className="flex-container" style={{ padding: '.5rem', textAlign: 'center' }}>
+        {/* <Col lg={24} className="flex-container" style={{ padding: '.5rem', textAlign: 'center' }}>
           <Card title="Srijan 22 schedule"
                 headStyle={{ backgroundColor: 'rgba(22, 104, 159, 0.3)', borderBottom: '2px solid #00ebff', color: '#00ebff' }}
                 bodyStyle={{ backgroundColor: 'rgba(22, 104, 159, 0.2)', border: 'none' }}
@@ -90,9 +90,9 @@ const Dashboard = props => {
               </Col>
             </Row>
           </Card>
-        </Col>
+        </Col> */}
       </Row>
-      <Row >
+      <Row style={{display: "block", }}>
         <Col lg={12} className="flex-container" style={{ padding: '.5rem', textAlign: 'center' }}>
           <Card title="Srijan 22 events"
                 headStyle={{ backgroundColor: 'rgba(22, 104, 159, 0.3)', borderBottom: '2px solid #00ebff', color: '#00ebff' }}
@@ -102,16 +102,14 @@ const Dashboard = props => {
           </Card>
         </Col>
         <Col lg={12} className="flex-container" style={{ padding: '.5rem', textAlign: 'center' }}>
-          <Card title="Download the official Srijan 22 app"
+          <Card title="Srijan 22"
                 headStyle={{backgroundColor: 'rgba(22, 104, 159, 0.3)', borderBottom: '2px solid #00ebff', color: '#00ebff' }}
                 bodyStyle={{backgroundColor: 'rgba(22, 104, 159, 0.2)', border: 'none' }}
                 className="dashboard-app-section">
             <div className="dashboard-app-img-container">
-              <img alt="Srijan 22 app" src={SrijanAppImage} />
+              <img alt="Srijan 22 app" src='https://user-images.githubusercontent.com/52379890/161893130-065dc5ea-1cd9-4af9-aa24-73ba2961386f.jpeg' />
             </div>
-            <a href='https://play.google.com/store/apps/details?id=in.srijanju.androidapp&hl=en_us&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-              <img alt='Get it on Google Play' src={GooglePlayBadge} width="175px"/>
-            </a>
+            
           </Card>
         </Col>
       </Row>

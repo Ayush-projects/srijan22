@@ -115,7 +115,7 @@ const AppLayout = props => {
             </RouteSwitch>
             <Footer className="footer">
               <span>
-                <strong>Srijan 20</strong> Made with &#128157; by the Faculty of Engineering And Technology Students' Union, <br/> Jadavpur University <br/>Salt Lake Campus Plot No.8, Salt Lake Bypass, LB Block, Sector III, Salt Lake City, Kolkata 700106.
+                <strong>Srijan 22</strong> Made with &#128157; by the Faculty of Engineering And Technology Students' Union, <br/> Jadavpur University <br/>Salt Lake Campus Plot No.8, Salt Lake Bypass, LB Block, Sector III, Salt Lake City, Kolkata 700106.
               </span>
               <div className="footer-social-media-icons">
                 <a href="https://www.facebook.com/jusrijan/" target="_blank_"><Icon type="facebook" size="2x" /></a>

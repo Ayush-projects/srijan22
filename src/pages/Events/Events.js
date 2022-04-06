@@ -30,7 +30,7 @@ const Events = props => {
                   title="Srijan Events">
               <div className="events-grid">
                 {/* Mementos */}
-                <div className="events-card">
+                {/* <div className="events-card">
                   <div className="events-card-header">
                     <div style={{ width: '100%' }}>
                       <img
@@ -44,7 +44,7 @@ const Events = props => {
                     <small style={{ color: '#00ebff', textTransform: 'uppercase' }}>(Misc)</small>
                     <Link to="/app/events/mementos" className="events-card-visit-btn"><Icon type="export" />&nbsp;Visit page</Link>
                   </div>
-                </div>
+                </div> */}
                 {/* Mementos */}
                 {fetchedEvents.map((ev, index) => (
                   <div className="events-card" key={index}>

@@ -140,7 +140,7 @@ const Landing = props => {
             {showForm === 'register' ? <RegisterForm setShowForm={setShowForm}/> : null}
             {showForm === 'forgot-password' ? <PasswordResetForm/> : null}
             
-            <a href="/video.html">
+          
         <span className="btn1" >
                   
               <div id="scrollContainer" style={{marginTop: "1rem"}}>
@@ -150,7 +150,7 @@ const Landing = props => {
             bottom: "40px", position: "absolute", borderWidth: "0 0.25em 0.25em 0",  borderStyle: "solid", borderColor: "antiquewhite",  animation: "scrolldown 1.2s ease-in-out infinite"}}></div>
             </div>
         </span>
-        </a>
+     
         </section>
         <br/>
         <br/>

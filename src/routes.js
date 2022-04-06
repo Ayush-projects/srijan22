@@ -22,13 +22,13 @@ export const routes = [
     routeName: 'Events',
     icon: 'schedule'
   },
-  {
-    path: '/merchandise',
-    component: MerchandisePage,
-    layout: '/app',
-    routeName: 'Merchandise',
-    icon: 'shopping'
-  },
+  // {
+  //   path: '/merchandise',
+  //   component: MerchandisePage,
+  //   layout: '/app',
+  //   routeName: 'Merchandise',
+  //   icon: 'shopping'
+  // },
   {
     path: '/talks',
     component: TalksPage,
@@ -36,13 +36,13 @@ export const routes = [
     routeName: 'Talks',
     icon: 'audio'
   },
-  {
-    path: '/team',
-    component: TeamPage,
-    layout: '/app',
-    routeName: 'Team',
-    icon: 'team'
-  },
+  // {
+  //   path: '/team',
+  //   component: TeamPage,
+  //   layout: '/app',
+  //   routeName: 'Team',
+  //   icon: 'team'
+  // },
   {
     path: '/sponsors',
     component: SponsorsPage,
@@ -50,13 +50,13 @@ export const routes = [
     routeName: 'Sponsors',
     icon: 'read'
   },
-  {
-    path: '/workshops',
-    component: WorkshopsPage,
-    layout: '/app',
-    routeName: 'Workshops',
-    icon: 'crown'
-  },
+  // {
+  //   path: '/workshops',
+  //   component: WorkshopsPage,
+  //   layout: '/app',
+  //   routeName: 'Workshops',
+  //   icon: 'crown'
+  // },
   {
     path: '/profile',
     component: ProfilePage,
