@@ -107,7 +107,7 @@ const Dashboard = props => {
                 bodyStyle={{backgroundColor: 'rgba(22, 104, 159, 0.2)', border: 'none' }}
                 className="dashboard-app-section">
             <div className="dashboard-app-img-container">
-              <img alt="Srijan 22 app" src='https://user-images.githubusercontent.com/52379890/161893130-065dc5ea-1cd9-4af9-aa24-73ba2961386f.jpeg' />
+              <img alt="Srijan 22 app" src='https://user-images.githubusercontent.com/52379890/162214624-872e425a-9466-4a8e-9274-c454f6ea8e04.jpeg' />
             </div>
             
           </Card>
