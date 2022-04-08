@@ -297,9 +297,10 @@ const handleFormSubmit=(e)=>{
                     <h4 style={{color: "white"}}>Suvankar: 7001082597</h4>
                   </Form.Item>
                   <Form.Item>
-                    <Button type="primary" htmlType="submit">
+                    <Button type="primary" htmlType="submit" disabled>
                       {submitBtnText}
                     </Button>
+                    <h4 style={{color: "white",marginTop:"10px"}}>**Not accepting anymore registrations for TShirts. For any queries, contact Suvankar(7001082597).</h4>
                   </Form.Item>
                 </Form>
               </Col>
