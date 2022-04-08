@@ -106,12 +106,12 @@ const Landing = props => {
                     }}>
                         14th - 17th April
                     </Title>
-                    <span className="btn"
+                    {/* <span className="btn"
                           onClick={() => window.open("/merchandise", "_self")}>
                    <p
               style={{padding: 0, margin: 0, color: 'white'}}> Srijan '22 Merchandise</p>
              
-        </span>
+        </span> */}
        
         
                     <div className="landing-actions-main">
