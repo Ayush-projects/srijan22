@@ -38,92 +38,16 @@ const Sponsors = props => {
                     </g>
                   </svg>
                 </a>
-                <a href="https://gailonline.com/home.html" target="_blank" rel="noopener noreferrer">
-                  <div className="sponsor-img-container">
-                    <img src={gail} alt="Gail"/>
-                  </div>
-                </a>
+              
               </Col>
-              <strong><h3>Gaming Partners</h3></strong>
-              <Col md={12} style={{ padding: '1rem 0' }}>
-                <a href="https://www.facebook.com/RFDGamingKolkata/" target="_blank" rel="noopener noreferrer">
-                  <div className="sponsor-img-container">
-                    <img src={rfd} alt="Ready for Destiny"/>
-                  </div>
-                </a>
-              </Col>
-              <Col md={12} style={{ padding: '1rem 0' }}>
-                <a href="https://www.clarioncomputers.in/" target="_blank" rel="noopener noreferrer">
-                  <div className="sponsor-img-container">
-                    <img src={clarion} alt="Clarion"/>
-                  </div>
-                </a>
-              </Col>
-              <Col md={12} style={{ padding: '1rem 0' }}>
-                <strong><h3>Wheels Partner</h3></strong>
-                <a href="https://www.hyundai.com/in/en" target="_blank" rel="noopener noreferrer">
-                  <div className="sponsor-img-container">
-                    <img src={hyundai} alt="Hyundai" style={{ background: '#fafafa', padding: '1rem' }}/>
-                  </div>
-                </a>
-              </Col>
-              <Col md={12} style={{ padding: '1rem 0' }}>
-                <strong><h3>Industry 4.0 Training Partner</h3></strong>
-                <a href="http://webelfujisoftvara.com/" target="_blank" rel="noopener noreferrer">
-                  <div className="sponsor-img-container">
-                    <img src={webel} alt="Webel-Fujisoft-Vara"/>
-                  </div>
-                </a>
-              </Col>
-              <strong><h3>Other sponsors</h3></strong>
-              <Col md={8} style={{ padding: '1rem 0' }}>
-                <a href="http://myprintstory.com/" target="_blank" rel="noopener noreferrer">
-                  <div className="sponsor-img-container">
-                    <img src={myprintstory} alt="My Print Story"/>
-                  </div>
-                </a>
-              </Col>
-              <Col md={8} style={{ padding: '1rem 0' }}>
-                <a href="https://atkt.in/" target="_blank" rel="noopener noreferrer">
-                  <div className="sponsor-img-container">
-                    <img src={atkt} alt="atkt"/>
-                  </div>
-                </a>
-              </Col>
-              <Col md={8} style={{ padding: '1rem 0' }}>
-                <a href="https://www.facebook.com/EruditeEducation" target="_blank" rel="noopener noreferrer">
-                  <div className="sponsor-img-container">
-                    <img src={erudite} alt="Erudite"/>
-                  </div>
-                </a>
-              </Col>
-              <Col md={8} style={{ padding: '1rem 0' }}>
-                <a href="https://tinder.com/" target="_blank" rel="noopener noreferrer">
-                  <div className="sponsor-img-container">
-                    <img src={tinder} alt="Tinder"/>
-                  </div>
-                </a>
-              </Col>
-              <Col md={8} style={{ padding: '1rem 0' }}>
-                <a href="https://www.zerodollarsecurity.in/" target="_blank" rel="noopener noreferrer">
-                  <div className="sponsor-img-container">
-                    <img src={zeroDSecurity} alt="Zero Dollar Security"/>
-                  </div>
-                </a>
-              </Col>
-              <Col md={8} style={{ padding: '1rem 0' }}>
-                <a href="https://www.facebook.com/vanikolkata/" target="_blank" rel="noopener noreferrer">
-                  <div className="sponsor-img-container">
-                    <img src={vani} alt="Vani Institute"/>
-                  </div>
-                </a>
-              </Col>
+        
             </Row>
           </Card>
         </Col>
       </Row>
     </section>
   );
+  
 }
 
 export default Sponsors;

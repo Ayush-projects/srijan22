@@ -98,11 +98,11 @@ const Dashboard = props => {
                 headStyle={{ backgroundColor: 'rgba(22, 104, 159, 0.3)', borderBottom: '2px solid #00ebff', color: '#00ebff' }}
                 bodyStyle={{ backgroundColor: 'rgba(22, 104, 159, 0.2)', border: 'none' }}
                 style={{ width: '100%', backgroundColor: 'transparent', border: 'none' }}>
-            <DoughnutChart data={[3, 4, 3, 7, 6]} labels={['Coding', 'Gaming', 'Robotics', 'Misc', 'Fun']} />
+            <DoughnutChart data={[4, 3, 5, 2, 6,8]} labels={['Coding', 'Gaming', 'Circuits and Robotics', 'Business and Management', 'Brainstorming', 'Misc']} />
           </Card>
         </Col>
         <Col lg={12} className="flex-container" style={{ padding: '.5rem', textAlign: 'center' }}>
-          <Card title="Srijan '22 Merchandise"
+          <Card title="Workshop"
                 headStyle={{backgroundColor: 'rgba(22, 104, 159, 0.3)', borderBottom: '2px solid #00ebff', color: '#00ebff' }}
                 bodyStyle={{backgroundColor: 'rgba(22, 104, 159, 0.2)', border: 'none' }}
                 className="dashboard-app-section">

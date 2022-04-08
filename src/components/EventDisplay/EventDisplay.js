@@ -208,7 +208,7 @@ const EventDisplay = (props) => {
                             <span className="btn">
                               <p style={{ padding: 0, margin: 0 }}>Registration closed</p>
                             </span>
-                          ) : eventData.reg_link ? (
+                          ) : (eventData.reg_link ) ? (
                             <a href={eventData.reg_link} target="_blank_">
                               <span className="btn">
                                 <p style={{ padding: 0, margin: 0 }}>Register</p>
@@ -219,13 +219,16 @@ const EventDisplay = (props) => {
                               <p style={{ padding: 0, margin: 0 }}>Register</p>
                             </span>
                           )}
-                          {eventData.rules_url ? (
-                            <a target="_blank_" href={eventData.rules_url}>
-                              <span className="btn">
-                                <p style={{ padding: 0, margin: 0 }}>Rules</p>
-                              </span>
-                            </a>
-                          ) : null}
+                          {
+                            eventData.rules_url ? (
+                              <a target="_blank_" href={eventData.rules_url}>
+                                <span className="btn">
+                                  <p style={{ padding: 0, margin: 0 }}>Rules</p>
+                                </span>
+                              </a>
+                            ) : null
+
+                          }
                         </div>
                       )}
                     </div>
