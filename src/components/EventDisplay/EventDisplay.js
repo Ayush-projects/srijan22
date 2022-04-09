@@ -50,7 +50,7 @@ const EventDisplay = (props) => {
 
     const teamnameRegex = /^[a-zA-Z0-9]{3,16}$/;
     if (!teamnameRegex.test(teamname)) {
-      throw new Error("Invalid team name. Team name should be atleast 3 characters long and can contain letters or numbers");
+      throw new Error("Invalid team name. Team name should be atleast 3 to 16 characters long and can contain letters or numbers");
     }
 
     const emails = [leader, member2, member3, member4, member5].filter(item => item !== "");
@@ -199,9 +199,16 @@ const EventDisplay = (props) => {
                         return <strong key={index}>{note}<br /></strong>
                       }) : null}
                       {isRegistered ? (
+                        <div>
                         <span className="btn">
                           <p style={{ padding: 0, margin: 0 }}>You've registered for this event</p>
                         </span>
+                        <a target="_blank_" href={eventData.rules_url}>
+                                <span className="btn">
+                                  <p style={{ padding: 0, margin: 0 }}>Rules</p>
+                                </span>
+                              </a>
+                        </div>
                       ) : (
                         <div>
                           {eventData.maxts === 0 ? (
