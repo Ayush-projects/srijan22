@@ -10,7 +10,7 @@ import tinder from '../../assets/Images/Sponsors/tinder-R-red-RGB.png';
 import zeroDSecurity from '../../assets/Images/Sponsors/ZDS Icon.jpeg';
 import atkt from '../../assets/Images/Sponsors/ATKT Logo 2.png';
 import myprintstory from '../../assets/Images/Sponsors/MY PRINT STORY LOGO-min.jpg'
-import vani from '../../assets/Images/Sponsors/vani.jpg';
+import flutrr from '../../assets/Images/Sponsors/Flutrr.png';
 import './Sponsors.css';
 
 const Sponsors = props => {
@@ -40,7 +40,24 @@ const Sponsors = props => {
                 </a>
               
               </Col>
-        
+              <strong><h3>Silver Sponsors</h3></strong>
+              <Col lg={24} style={{ padding: '1rem 0' }}>
+                <a href="https://webelfujisoftvara.com" target="_blank" rel="noopener noreferrer">
+                  <div className="sponsor-img-container">
+                    <img src={webel} alt="webel-logo"></img>
+                  </div>
+                </a>
+              
+              </Col>
+              <strong><h3>Official Dating Partner</h3></strong>
+              <Col lg={24} style={{ padding: '1rem 0' }}>
+                <a href="https://flutrr.com" target="_blank" rel="noopener noreferrer">
+                <div className="sponsor-img-container">
+                <img src={flutrr} alt="flutrr-logo"></img>
+                </div>
+                </a>
+              
+              </Col>
             </Row>
           </Card>
         </Col>
