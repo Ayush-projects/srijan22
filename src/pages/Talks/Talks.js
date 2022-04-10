@@ -32,7 +32,7 @@ const Talks = props => {
                   <br /><br />
                   Join us on 14 th April, 2022 to get inspired by a self-built software engineer at Google, Mr. Raj Vikramaditya(Striver. He has a YouTube channel with over 160K+ subscribers.
                   <br /><br />
-                  He is a Candidate Master(2020) at Codeeforces and 6 star at Codechef(2019) who shares knowledge on DSA.
+                  He is a Candidate Master(2020) at Codeforces and 6 star at Codechef(2019) who shares knowledge on DSA.
                   <br /><br />
                   Striver will be there on 14th April. Will you?
                   <br /><br />
