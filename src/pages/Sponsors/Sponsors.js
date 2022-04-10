@@ -24,7 +24,7 @@ const Sponsors = props => {
                 title="Sponsors">
             <Row>
               <Col lg={24} style={{ padding: '1rem 0' }}>
-                <strong><h3>Gold Sponsors</h3></strong>
+                <strong><h3>Platinum Sponsors</h3></strong>
                 <a href="https://www.mobilewalla.com" target="_blank" rel="noopener noreferrer">
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="175" viewBox="0 0 200 40" style={{ margin: '1rem 0' }}>
                     <g fill="none" fill-rule="nonzero">
