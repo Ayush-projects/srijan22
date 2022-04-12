@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col, Card } from 'antd';
-import rfd from '../../assets/Images/Sponsors/rfd-min.jpg';
-import clarion from '../../assets/Images/Sponsors/cl.png';
+import wowmomo from '../../assets/Images/Sponsors/wowmomo.jpg';
+import InterviewBuddy from '../../assets/Images/Sponsors/InterviewBuddy.png';
 import hyundai from '../../assets/Images/Sponsors/1280px-Hyundai_Motor_Company_logo.svg.png';
 import webel from '../../assets/Images/Sponsors/Webel Fuji Logo.png';
 import gail from '../../assets/Images/Sponsors/1200px-GAIL_Logo.svg.png';
@@ -57,6 +57,23 @@ const Sponsors = props => {
                 </div>
                 </a>
               
+              </Col>
+              <strong><h3>Official Food Partner</h3></strong>
+              <Col lg={24} style={{ padding: '1rem 0' }}>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                <div className="sponsor-img-container">
+                <img src={wowmomo} alt="wow-momo-logo"></img>
+                </div>
+                </a>
+              
+              </Col>
+              <strong><h3>Official Education Partner</h3></strong>
+              <Col lg={24} style={{ padding: '1rem 0' }}>
+                <a href="https://interviewbuddy.in" target="_blank" rel="noopener noreferrer">
+                <div className="sponsor-img-container">
+                <img src={InterviewBuddy} alt="InterviewBuddy-logo"></img>
+                </div>
+                </a>
               </Col>
             </Row>
           </Card>

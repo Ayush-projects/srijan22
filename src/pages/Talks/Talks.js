@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row, Col, Card, Icon } from 'antd';
-import F5PosterOne from '../../assets/Images/F5_Srijan22_poster_2.jpg';
-import F5PosterTwo from '../../assets/Images/F5_Srijan22_poster_1.jpg';
-// import F5PosterThree from '../../assets/Images/F5_poster_3.jpeg';
+import F5PosterOne from '../../assets/Images/F5_Srijan_poster_1.jpg';
+import F5PosterTwo from '../../assets/Images/F5_Srijan_poster_2.jpg';
+import F5PosterThree from '../../assets/Images/F5_Srijan_poster_3.jpg';
 import './Talks.css';
 
 const Talks = props => {
@@ -64,7 +64,7 @@ const Talks = props => {
                 </p>
               </Col>
             </Row>
-            {/* <Row>
+            <Row>
               <Col lg={14}>
                 <div className="talks-img-container">
                   <img src={F5PosterThree} alt="F5 Three" />
@@ -72,18 +72,22 @@ const Talks = props => {
               </Col>
               <Col lg={10} className="talks-info">
                 <h5 className="talks-subtitle">
-                  <Icon type="calendar" /> Date: 5th March<br />
-                  <Icon type="phone" /> Soham Das (6296709930)&nbsp;&nbsp;|&nbsp;&nbsp;Soumya Deep Roy (6291352405)
+                  <Icon type="calendar" />Date: 14th April<br />
+                  <Icon type="phone" /> Suvankar Mondal (7001082597)&nbsp;&nbsp;|&nbsp;&nbsp;Navonil Sarkar (8918845868)
                 </h5>
                 <p>
-                  With less than 24 hours to go for the inaugural session of Srijan'20, we unveil the final speaker of our session: Rwitobroto Mukherjee.
+                "The secret of getting ahead is getting started." 
                   <br /><br />
-                  A theatre artist from a very young age, he has transitioned effortlessly to the big screen with movies like Open Tee Bioscope,Generation Ami and most recently as Khoka in Dwitiyo Purush.
+                  Keeping this in mind, what could be a better start towards a bright future apart from registering  for this interactive session by Soumita Roy Chowdhury.
                   <br /><br />
-                  Watch him speak about how he forayed into the world of theatre and films and much more!
+                  She is specialized in business development, , account management in video, mobile and technology industry accross APAC, US and India. She is currently working at Mobilewalla, Singapore. 
+                  <br /><br />
+                  So? What are you waiting for?
+                  <br /><br />
+                  Come and join this amazing session without any further adieu.
                 </p>
               </Col>
-            </Row> */}
+            </Row>
           </Card>
         </Col>
       </Row>
