@@ -47,6 +47,7 @@ const Events = props => {
                 </div> */}
                 {/* Mementos */}
                 {fetchedEvents.map((ev, index) => (
+                    <Link to={"/app/events/" + ev.code} className="events-card-visit-btn">
                   <div className="events-card" key={index}>
                     <div className="events-card-header">
                       <div style={{ width: '100%' }}>
@@ -62,6 +63,7 @@ const Events = props => {
                       <Link to={"/app/events/" + ev.code} className="events-card-visit-btn"><Icon type="export" />&nbsp;Visit page</Link>
                     </div>
                   </div>
+                  </Link>
                 ))}
               </div>
             </Card>
