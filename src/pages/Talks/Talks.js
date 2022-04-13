@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row, Col, Card, Icon } from 'antd';
-import F5PosterOne from '../../assets/Images/F5_poster_1.jpeg';
-import F5PosterTwo from '../../assets/Images/f5_poster_2-min.jpeg';
-import F5PosterThree from '../../assets/Images/F5_poster_3.jpeg';
+import F5PosterOne from '../../assets/Images/F5_Srijan_poster_1.jpg';
+import F5PosterTwo from '../../assets/Images/F5_Srijan_poster_2.jpg';
+import F5PosterThree from '../../assets/Images/F5_Srijan_poster_3.jpg';
 import './Talks.css';
 
 const Talks = props => {
@@ -22,20 +22,21 @@ const Talks = props => {
               </Col>
               <Col lg={10} className="talks-info">
                 <h5 className="talks-subtitle">
-                  <Icon type="calendar" /> Date: 5th March<br />
-                  <Icon type="phone" /> Soham Das (6296709930)&nbsp;&nbsp;|&nbsp;&nbsp;Soumya Deep Roy (6291352405)
+                  <Icon type="calendar" /> Date: 14th April<br />
+                  <Icon type="phone" /> Suvankar Mondal (7001082597)&nbsp;&nbsp;|&nbsp;&nbsp;Navonil Sarkar (8918845868)
                 </h5>
                 <p>
-                  "All glory comes from daring to begin"
+                  Are you a coding enthusiast?
                   <br /><br />
-                  We've taken the quoted words quite literally and challenged ourselves to churn out the best in Srijan every year, since its inception.
-                  This year, we unveil 'F5'- a talk session comprising of speakers from diverse backgrounds, intended to hit the refresh button of your system, before you take the plunge into the city's biggest techfest.
+                  Looking for some motivation to get your coding journey started? We have got you covered!
                   <br /><br />
-                  The first in our impressive lineup is none other than the Youtuber Gaurav Sen, a well known face in the coding circle.
-                  Famous for his remarkably lucid explanation of algorithms and system design, and having been a part of both Uber and DirectI teams in the past, his reputation precedes him.
-                  Make sure you reach Gandhi Bhavan early enough to hear him speak on "Interview Preparation using Competitive Programming" , before a rush takes over!
+                  Join us on 14 th April, 2022 to get inspired by a self-built software engineer at Google, Mr. Raj Vikramaditya(Striver. He has a YouTube channel with over 160K+ subscribers.
                   <br /><br />
-                  #Srijan_20<br />
+                  He is a Candidate Master(2020) at Codeforces and 6 star at Codechef(2019) who shares knowledge on DSA.
+                  <br /><br />
+                  Striver will be there on 14th April. Will you?
+                  <br /><br />
+                  #Srijan_22<br />
                   #tech_enthusiasts_assemble
                 </p>
               </Col>
@@ -48,19 +49,17 @@ const Talks = props => {
               </Col>
               <Col lg={10} className="talks-info">
                 <h5 className="talks-subtitle">
-                  <Icon type="calendar" /> Date: 5th March<br />
-                  <Icon type="phone" /> Soham Das (6296709930)&nbsp;&nbsp;|&nbsp;&nbsp;Soumya Deep Roy (6291352405)
+                  <Icon type="calendar" /> Date: 14th April<br />
+                  <Icon type="phone" /> Suvankar Mondal (7001082597)&nbsp;&nbsp;|&nbsp;&nbsp;Navonil Sarkar (8918845868)
                 </h5>
                 <p>
-                "They’re not looking for a story that tells them who they are. They already know who they are. They’re here because they want a glimpse of who they could be." -Dr. Ford
+                Confused and worried about Placements, College and Exams? Calm Yourselves because we are back with an exciting interactive session for you by Mr. Manish Mazumder. 
                 <br /><br />
-                The world is more often than not a rather miserable place. It's easy to succumb here. It's the people who show us the light at the end of the tunnel whom Srijan, Jadavpur University patronises.
+                Mr. Mazumder has his own Youtube channel with 15K+ subscribers and he was a former software developer at VMware India and his currently working on his dream project to create a great space for students. He did his M.Tech in CSE from IIT Kanpur.
                 <br /><br />
-                Our 2nd speaker holds similar credentials. An influencer sans parallel, he has forayed into the world of education carving a niche for himself with a subscriber count of 1.6 million.
+                Join us in this interactive session with Mr. Manish Mazumder.
                 <br /><br />
-                Unveiling the second speaker for F5, Aman Dhattarwal. He'll be there at Gandhi Bhawan on 5th March. Will you?
-                <br /><br />
-                #Srijan_20
+                #Srijan_22<br />
                 #tech_enthusiasts_assemble
                 </p>
               </Col>
@@ -73,15 +72,19 @@ const Talks = props => {
               </Col>
               <Col lg={10} className="talks-info">
                 <h5 className="talks-subtitle">
-                  <Icon type="calendar" /> Date: 5th March<br />
-                  <Icon type="phone" /> Soham Das (6296709930)&nbsp;&nbsp;|&nbsp;&nbsp;Soumya Deep Roy (6291352405)
+                  <Icon type="calendar" />Date: 14th April<br />
+                  <Icon type="phone" /> Suvankar Mondal (7001082597)&nbsp;&nbsp;|&nbsp;&nbsp;Navonil Sarkar (8918845868)
                 </h5>
                 <p>
-                  With less than 24 hours to go for the inaugural session of Srijan'20, we unveil the final speaker of our session: Rwitobroto Mukherjee.
+                "The secret of getting ahead is getting started." 
                   <br /><br />
-                  A theatre artist from a very young age, he has transitioned effortlessly to the big screen with movies like Open Tee Bioscope,Generation Ami and most recently as Khoka in Dwitiyo Purush.
+                  Keeping this in mind, what could be a better start towards a bright future apart from registering  for this interactive session by Soumita Roy Chowdhury.
                   <br /><br />
-                  Watch him speak about how he forayed into the world of theatre and films and much more!
+                  She is specialized in business development, , account management in video, mobile and technology industry accross APAC, US and India. She is currently working at Mobilewalla, Singapore. 
+                  <br /><br />
+                  So? What are you waiting for?
+                  <br /><br />
+                  Come and join this amazing session without any further adieu.
                 </p>
               </Col>
             </Row>

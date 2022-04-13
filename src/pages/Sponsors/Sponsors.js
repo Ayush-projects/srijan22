@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col, Card } from 'antd';
-import rfd from '../../assets/Images/Sponsors/rfd-min.jpg';
-import clarion from '../../assets/Images/Sponsors/cl.png';
+import wowmomo from '../../assets/Images/Sponsors/wowmomo.jpg';
+import InterviewBuddy from '../../assets/Images/Sponsors/InterviewBuddy.png';
 import hyundai from '../../assets/Images/Sponsors/1280px-Hyundai_Motor_Company_logo.svg.png';
 import webel from '../../assets/Images/Sponsors/Webel Fuji Logo.png';
 import gail from '../../assets/Images/Sponsors/1200px-GAIL_Logo.svg.png';
@@ -10,7 +10,7 @@ import tinder from '../../assets/Images/Sponsors/tinder-R-red-RGB.png';
 import zeroDSecurity from '../../assets/Images/Sponsors/ZDS Icon.jpeg';
 import atkt from '../../assets/Images/Sponsors/ATKT Logo 2.png';
 import myprintstory from '../../assets/Images/Sponsors/MY PRINT STORY LOGO-min.jpg'
-import vani from '../../assets/Images/Sponsors/vani.jpg';
+import flutrr from '../../assets/Images/Sponsors/Flutrr.png';
 import './Sponsors.css';
 
 const Sponsors = props => {
@@ -24,7 +24,7 @@ const Sponsors = props => {
                 title="Sponsors">
             <Row>
               <Col lg={24} style={{ padding: '1rem 0' }}>
-                <strong><h3>Gold Sponsors</h3></strong>
+                <strong><h3>Platinum Sponsors</h3></strong>
                 <a href="https://www.mobilewalla.com" target="_blank" rel="noopener noreferrer">
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="175" viewBox="0 0 200 40" style={{ margin: '1rem 0' }}>
                     <g fill="none" fill-rule="nonzero">
@@ -40,7 +40,41 @@ const Sponsors = props => {
                 </a>
               
               </Col>
-        
+              <strong><h3>Silver Sponsors</h3></strong>
+              <Col lg={24} style={{ padding: '1rem 0' }}>
+                <a href="https://webelfujisoftvara.com" target="_blank" rel="noopener noreferrer">
+                  <div className="sponsor-img-container">
+                    <img src={webel} alt="webel-logo"></img>
+                  </div>
+                </a>
+              
+              </Col>
+              <strong><h3>Official Dating Partner</h3></strong>
+              <Col lg={24} style={{ padding: '1rem 0' }}>
+                <a href="https://flutrr.com" target="_blank" rel="noopener noreferrer">
+                <div className="sponsor-img-container">
+                <img src={flutrr} alt="flutrr-logo"></img>
+                </div>
+                </a>
+              
+              </Col>
+              <strong><h3>Official Food Partner</h3></strong>
+              <Col lg={24} style={{ padding: '1rem 0' }}>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                <div className="sponsor-img-container">
+                <img src={wowmomo} alt="wow-momo-logo"></img>
+                </div>
+                </a>
+              
+              </Col>
+              <strong><h3>Official Education Partner</h3></strong>
+              <Col lg={24} style={{ padding: '1rem 0' }}>
+                <a href="https://interviewbuddy.in" target="_blank" rel="noopener noreferrer">
+                <div className="sponsor-img-container">
+                <img src={InterviewBuddy} alt="InterviewBuddy-logo"></img>
+                </div>
+                </a>
+              </Col>
             </Row>
           </Card>
         </Col>
