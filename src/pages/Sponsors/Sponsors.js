@@ -2,11 +2,11 @@ import React from 'react';
 import { Row, Col, Card } from 'antd';
 import wowmomo from '../../assets/Images/Sponsors/wowmomo.jpg';
 import InterviewBuddy from '../../assets/Images/Sponsors/InterviewBuddy.png';
-import hyundai from '../../assets/Images/Sponsors/1280px-Hyundai_Motor_Company_logo.svg.png';
+import foodporium from '../../assets/Images/Sponsors/foodporium.jpeg';
 import webel from '../../assets/Images/Sponsors/Webel Fuji Logo.png';
-import gail from '../../assets/Images/Sponsors/1200px-GAIL_Logo.svg.png';
+import pizzahut from '../../assets/Images/Sponsors/pizzahut.jpeg';
 import erudite from '../../assets/Images/Sponsors/Erudite Logo.jpg';
-import tinder from '../../assets/Images/Sponsors/tinder-R-red-RGB.png';
+import fourthstreet from '../../assets/Images/Sponsors/4thstreet.jpeg';
 import zeroDSecurity from '../../assets/Images/Sponsors/ZDS Icon.jpeg';
 import atkt from '../../assets/Images/Sponsors/ATKT Logo 2.png';
 import myprintstory from '../../assets/Images/Sponsors/MY PRINT STORY LOGO-min.jpg'
@@ -58,8 +58,8 @@ const Sponsors = props => {
                 </a>
               
               </Col>
-              <strong><h3>Official Food Partner</h3></strong>
-              <Col lg={24} style={{ padding: '1rem 0' }}>
+              <strong><h3>Official Food Partners</h3></strong>
+              <Col lg={12} style={{ padding: '1rem 0' }}>
                 <a href="#" target="_blank" rel="noopener noreferrer">
                 <div className="sponsor-img-container">
                 <img src={wowmomo} alt="wow-momo-logo"></img>
@@ -67,8 +67,33 @@ const Sponsors = props => {
                 </a>
               
               </Col>
-              <strong><h3>Official Education Partner</h3></strong>
+              <Col lg={12} style={{ padding: '1rem 0' }}>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                <div className="sponsor-img-container">
+                <img src={foodporium} alt="wow-momo-logo"></img>
+                </div>
+                </a>
+              
+              </Col>
+              <Col lg={12} style={{ padding: '1rem 0' }}>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                <div className="sponsor-img-container">
+                <img src={fourthstreet} alt="wow-momo-logo"></img>
+                </div>
+                </a>
+              
+              </Col>
+              <Col lg={12} style={{ padding: '1rem 0' }}>
+                <a href="https://www.pizzahut.co.in" target="_blank" rel="noopener noreferrer">
+                <div className="sponsor-img-container">
+                <img src={pizzahut} alt="wow-momo-logo"></img>
+                </div>
+                </a>
+              
+              </Col>
+             
               <Col lg={24} style={{ padding: '1rem 0' }}>
+              <strong><h3>Official Education Partner</h3></strong>
                 <a href="https://interviewbuddy.in" target="_blank" rel="noopener noreferrer">
                 <div className="sponsor-img-container">
                 <img src={InterviewBuddy} alt="InterviewBuddy-logo"></img>
