@@ -113,7 +113,7 @@ const Landing = props => {
              
         </span> */}
        
-        
+{/*         
                     <div className="landing-actions-main">
                         {isAuthenticated ? (
               <Link to="/app/dashboard">
@@ -131,9 +131,7 @@ const Landing = props => {
               </>
             )}
 
-
-          
-                    </div>
+                    </div> */}
 
                 </div>) : null}
 
